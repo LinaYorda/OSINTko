@@ -1,0 +1,6 @@
+#!/usr/bin/env sh 
+
+set -e
+
+cd /usr/share/Lawliet
+exec python3 main.py  "$@"

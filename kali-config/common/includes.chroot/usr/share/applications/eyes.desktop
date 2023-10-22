@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Eyes
+Comment=Email Analysis
+Type=Application
+Categories=osint-email;
+Terminal=true
+Icon=/usr/share/Eyes/eyes.png
+Exec=/usr/share/kali-menu/exec-in-shell "eyes -h"
+Path=
+StartupNotify=false

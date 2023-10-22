@@ -1,0 +1,21 @@
+##
+## The b43 firmware require network access, hence are not dependencies of
+## kali-linux-firmware. But we install those in the live image anyway,
+## since we have network access when we build the live ISO.
+##
+kali-linux-firmware
+#if ARCHITECTURES i386 amd64
+firmware-b43legacy-installer
+firmware-b43-installer
+#endif
+
+##
+## Make sure we install as many input/video drivers as we can. Note that
+## these packages need to be explicitly listed if we want to be sure that
+## they're installed. Installing xserver-xorg is not enough to make sure,
+## due to its dependencies, defined as such:
+##  * xserver-xorg-input-all | xorg-driver-input
+##  * xserver-xorg-video-all | xorg-driver-video
+##
+xserver-xorg-input-all
+xserver-xorg-video-all

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg id="svg888" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata10">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path id="path148" d="M8,1c-3.8429,0-7,3.157-7,7,0,1.77,0.9107,3.7715,2,5h3v-5h4v-5h3c-1.274-1.4009-2.959-2-5-2zm5,2c1.1245,1.2366,2,3.1982,2,5,0,3.8428-3.157,7-7,7-2.073,0-3.7242-0.56089-5-2h-2v2h14v-12h-2z" fill-rule="evenodd" stroke-width="1pt" fill="#bebebe"/>
+</svg>

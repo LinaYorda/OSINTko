@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Inject default background in e17 configuration (for all known profiles)
+for profile in mobile standard; do
+    dpkg-divert --local --add /usr/share/enlightenment/data/config/$profile/e.cfg
+    eet -d /usr/share/enlightenment/data/config/$profile/e.cfg config /tmp/e.src
+    awk '/value "desktop_default_name"/ {print "    value \"desktop_default_background\" string: \"/usr/share/enlightenment/data/backgrounds/kali-wallpaper_1920x1200.edj\";"}; {print}' /tmp/e.src >/tmp/e2.src
+    eet -e /usr/share/enlightenment/data/config/$profile/e.cfg config /tmp/e2.src 1
+    rm -f /tmp/e.src /tmp/e2.src
+done

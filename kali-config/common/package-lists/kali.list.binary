@@ -1,0 +1,26 @@
+# ensure eatmydata is available for eatmydata.udeb
+eatmydata
+
+# ensure some packages installed by base-installer/post-base-installer.d/*
+# hooks are available
+locales
+pciutils
+usbutils
+eject
+tasksel
+
+# EFI support, ensure we have the required .deb in the ISO available for
+# installation
+
+#if ARCHITECTURES i386
+grub-efi
+grub-efi-ia32
+#endif
+#if ARCHITECTURES amd64
+grub-efi
+grub-efi-amd64
+#endif
+#if ARCHITECTURES arm64
+# Note: There is no grub-efi package on arm64
+grub-efi-arm64
+#endif

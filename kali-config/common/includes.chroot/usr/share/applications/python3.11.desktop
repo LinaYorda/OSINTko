@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Python (v3.11)
+Comment=Python Interpreter (v3.11)
+Exec=/usr/bin/python3.11
+Icon=/usr/share/pixmaps/python3.11.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true

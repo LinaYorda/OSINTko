@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   xml:space="preserve"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="format-text-strikethrough.svg"
+   sodipodi:docbase="/home/luca/svn/gnome2/gnome-themes/icon-themes/HighContrast-SVG/scalable/actions"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"><metadata
+   id="metadata27"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Format Text Strikethrough</dc:title><dc:date>January 2008</dc:date><dc:creator><cc:Agent><dc:title>Luca Ferretti</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org</dc:source><dc:subject><rdf:Bag><rdf:li>format</rdf:li><rdf:li>text</rdf:li><rdf:li>striketrough</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Based on text-bold shape, plus minor editing</dc:title></cc:Agent></dc:contributor><cc:license
+         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+         rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+   id="defs25" /><sodipodi:namedview
+   inkscape:window-height="947"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   width="48px"
+   height="48px"
+   inkscape:grid-points="true"
+   showgrid="true"
+   inkscape:zoom="15.1875"
+   inkscape:cx="24"
+   inkscape:cy="24"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:current-layer="svg2"
+   showguides="true"
+   inkscape:guide-bbox="true"><sodipodi:guide
+     orientation="vertical"
+     position="24.032922"
+     id="guide5104" /><sodipodi:guide
+     orientation="horizontal"
+     position="9.0864198"
+     id="guide7131" /><sodipodi:guide
+     orientation="horizontal"
+     position="18.962963"
+     id="guide8104" /><sodipodi:guide
+     orientation="horizontal"
+     position="38.781893"
+     id="guide8108" /></sodipodi:namedview>
+	<rect
+   style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="rect6077"
+   width="48"
+   height="48"
+   x="0"
+   y="0" /><g
+   id="Layer_x0020_4"
+   style="fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4;stroke-width:2;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+		<g
+   id="g5"
+   style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+			<g
+   id="g7"
+   style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+				<g
+   id="g9"
+   style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+					<path
+   style="stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round"
+   d="M 18,30.9 L 15.2,38.1 L 6,38.1 L 18.1,9.9 L 29.7,9.9 L 42,38.1 L 32.4,38.1 L 29.4,30.9 L 18,30.9 L 18,30.9 z M 28,26.1 C 28,26.1 24.2,16.3 23.6,14.7 L 23.4,14.7 C 22.9,16.4 19.2,26.1 19.2,26.1 L 28,26.1 z "
+   id="path11" />
+				</g>
+				<g
+   id="g13"
+   style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+					
+				</g>
+			</g>
+			<g
+   id="g17"
+   style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round">
+				<path
+   sodipodi:nodetypes="cccccccccccccc"
+   id="path11026"
+   d="M 17,31 L 15,41 L 7,41 L 20,8 L 28,8 L 41,41 L 33,41 L 31,31 L 17,31 z M 30,28 L 25,12 L 23,12 L 18,28 L 30,28 z "
+   style="stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round;fill:none;stroke:#ffffff;stroke-opacity:1" /><path
+   style="stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round"
+   d="M 17,31 L 15,41 L 7,41 L 20,8 L 28,8 L 41,41 L 33,41 L 31,31 L 17,31 z M 30,28 L 25,12 L 23,12 L 18,28 L 30,28 z "
+   id="path19"
+   sodipodi:nodetypes="cccccccccccccc" />
+			</g>
+		</g>
+	</g>
+	
+<rect
+   style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="rect2170"
+   width="42"
+   height="13"
+   x="3"
+   y="17"
+   ry="3.8847735" /></svg>

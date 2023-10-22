@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Run the kali-finish-install script to configure the target system
+cp /kali-finish-install /target/
+in-target /kali-finish-install || true
+rm -f /target/kali-finish-install

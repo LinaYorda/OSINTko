@@ -1,0 +1,7 @@
+BeautifulSoup4
+tld
+termcolor
+langdetect
+requests
+lxml
+galeodes

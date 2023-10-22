@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/h8mail
+exec python3 h8mail  "$@"
+

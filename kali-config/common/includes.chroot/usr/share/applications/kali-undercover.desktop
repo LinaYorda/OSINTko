@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Kali Undercover Mode
+Comment=Toggle Kali Undercover Mode
+Exec=kali-undercover
+Terminal=false
+Type=Application
+Icon=kali-undercover
+OnlyShowIn=XFCE;
+Keywords=windows;theme;desktop;

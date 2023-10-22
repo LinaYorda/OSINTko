@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=Kali Linux
+Comment=The official web site of Kali Linux
+Icon=kali-www
+Type=Link
+URL=https://www.kali.org/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

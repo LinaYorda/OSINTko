@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=Kali Tools
+Comment=Discover tools available in Kali Linux
+Icon=kali-tools
+Type=Link
+URL=https://www.kali.org/tools/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

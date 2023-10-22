@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/phonenumber-osint
+exec python3 phonenumber_osint.py "$@"

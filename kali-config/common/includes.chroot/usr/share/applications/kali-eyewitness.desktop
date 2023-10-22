@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=eyewitness
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "eyewitness -h"
+Icon=kali-eyewitness
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=12-reporting;
+X-Kali-Package=eyewitness

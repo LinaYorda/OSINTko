@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=OffSec Training
+Comment=Follow courses and get certified to show off your skills
+Icon=offsec
+Type=Link
+URL=https://www.offsec.com/courses-and-certifications/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

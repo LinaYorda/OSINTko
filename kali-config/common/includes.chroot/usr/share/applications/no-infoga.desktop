@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=No-Infoga
+Type=Application
+Categories=osint-phone-number;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "no-infoga -h"
+Path=
+StartupNotify=false

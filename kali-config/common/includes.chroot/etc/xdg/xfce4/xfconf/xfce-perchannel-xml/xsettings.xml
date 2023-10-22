@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xsettings" version="1.0">
+  <property name="Net" type="empty">
+    <property name="ThemeName" type="string" value="Kali-Dark"/>
+    <property name="IconThemeName" type="string" value="Flat-Remix-Blue-Dark"/>
+  </property>
+  <property name="Xft" type="empty">
+    <property name="HintStyle" type="string" value="hintslight"/>
+    <property name="Hinting" type="int" value="1"/>
+    <property name="RGBA" type="string" value="rgb"/>
+    <property name="Antialias" type="int" value="1"/>
+  </property>
+  <property name="Gtk" type="empty">
+    <property name="CursorThemeName" type="string" value="Adwaita"/>
+    <property name="CursorThemeSize" type="int" value="24"/>
+    <property name="FontName" type="string" value="Cantarell 11"/>
+    <property name="MonospaceFontName" type="string" value="Fira Code Medium 10"/>
+    <property name="ButtonImages" type="bool" value="true"/>
+    <property name="MenuImages" type="bool" value="true"/>
+  </property>
+  <property name="Xfce" type="empty">
+    <property name="SyncThemes" type="bool" value="true"/>
+  </property>
+</channel>

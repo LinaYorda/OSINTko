@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Lawliet
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=/usr/share/Lawliet/lawliet.png
+Exec=/usr/share/kali-menu/exec-in-shell "lawliet"
+Path=
+StartupNotify=false

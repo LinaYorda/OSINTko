@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=ImageMagick (color depth=q16)
+Comment=Display and edit image files
+Comment[fr]=Affiche et édite des fichiers images
+Comment[pt]=Exiba e edite arquivos de imagem
+Exec=/usr/bin/display-im6.q16 -nostdin %F
+Terminal=false
+Icon=display-im6.q16
+Type=Application
+Categories=Graphics;
+Keywords=Image;Slideshow;View;Transform;Enhance;F/X;Special Effects;
+Keywords[fr]=Image;Diaporama;Visualiser;Transformer;Améliorer;Effets spéciaux;
+MimeType=image/avs;image/bie;image/x-ms-bmp;image/cmyk;image/dcx;image/eps;image/fax;image/fits;image/gif;image/gray;image/jpeg;image/pjpeg;image/miff;image/mono;image/mtv;image/x-portable-bitmap;image/pcd;image/pcx;image/pdf;image/x-portable-graymap;image/pict;image/png;image/x-portable-anymap;image/x-portable-pixmap;image/ps;image/rad;image/x-rgb;image/rgba;image/rla;image/rle;image/sgi;image/sun-raster;image/targa;image/tiff;image/uyvy;image/vid;image/viff;image/x-xbitmap;image/x-xpixmap;image/x-xwindowdump;image/x-icon;image/yuv;

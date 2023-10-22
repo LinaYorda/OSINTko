@@ -1,0 +1,13 @@
+# Add packages required for virtualization support (installed by
+# /usr/lib/finish-install.d/08hw-detect) including their recommends
+hyperv-daemons
+open-vm-tools
+open-vm-tools-desktop
+qemu-guest-agent
+virtualbox-guest-utils
+virtualbox-guest-x11
+xauth
+xserver-xorg-video-vmware
+# Ensure unrar is available, otherwise the "unrar | unar" dependency
+# in kali-linux-headless ends up satisfied by the unar alternative
+unrar

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FFmpeg
+Comment=Video Downloader
+Type=Application
+Categories=video-downloaders;
+Terminal=true
+Icon=/usr/share/ffmpeg/ffmpeg.png
+Exec=/usr/share/kali-menu/exec-in-shell "ffmpeg -h"
+Path=
+StartupNotify=false

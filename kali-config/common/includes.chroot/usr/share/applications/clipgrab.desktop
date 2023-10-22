@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ClipGrab
+Comment=Download and convert videos from various portals (e.g. YouTube)
+Icon=/usr/share/ClipGrab/clipgrab.png
+Exec=/usr/share/kali-menu/exec-in-shell ClipGrab.AppImage
+Categories=video-downloaders;
+Terminal=true
+
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   xml:space="preserve"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docname="user-trash.svg"
+   sodipodi:docbase="/home/luca/Artwork/blackwhite-icon-theme/scalable/places"
+   version="1.0"><metadata
+   id="metadata23"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Empty Trash Icon</dc:title><dc:subject><rdf:Bag><rdf:li>trash</rdf:li><rdf:li>delete</rdf:li><rdf:li>deleted files</rdf:li><rdf:li>waste</rdf:li><rdf:li>recycle</rdf:li><rdf:li>bin</rdf:li><rdf:li>empty</rdf:li></rdf:Bag></dc:subject><dc:description>An empty trash bin</dc:description><cc:license
+         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+         rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+   id="defs21" /><sodipodi:namedview
+   inkscape:window-height="947"
+   inkscape:window-width="1268"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   showgrid="true"
+   inkscape:grid-bbox="true"
+   inkscape:grid-points="true"
+   inkscape:zoom="15.895833"
+   inkscape:cx="24"
+   inkscape:cy="22.992937"
+   inkscape:window-x="6"
+   inkscape:window-y="46"
+   inkscape:current-layer="svg2" />
+	<rect
+   style="fill:none;fill-opacity:0.44401544;stroke:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="rect1333"
+   width="48"
+   height="48"
+   x="0"
+   y="0"
+   rx="0"
+   ry="0.046648435" /><path
+   sodipodi:nodetypes="cccscccc"
+   id="path2208"
+   d="M 23,6.5258192 C 15.1,6.5258192 9,9.6 9,13 L 9,37 C 9,40.4 16.1,44 24,44 C 31.9,44 39,41.4 39,38 L 39,13 C 39,9.6 31.9,6.5 24,6.5 L 23,6.5258192 z "
+   style="fill:#ffffff;fill-rule:nonzero;stroke:#ffffff;stroke-width:8;stroke-linejoin:round;stroke-miterlimit:4;fill-opacity:1;stroke-opacity:1;stroke-dasharray:none" /><path
+   sodipodi:nodetypes="cccsccc"
+   id="path3083"
+   d="M 24,5 C 15.2,5 7,8.1 7,12 L 7,18 C 7,21.9 15.2,24.8 24,24.8 C 32.8,24.8 41,21.9 41,18 L 41,12 C 41,8.1 32.8,5 24,5 z "
+   style="fill:#ffffff;fill-rule:nonzero;stroke:#ffffff;stroke-width:8;stroke-linejoin:round;stroke-miterlimit:4;fill-opacity:1;stroke-opacity:1;stroke-dasharray:none" /><path
+   style="fill:#000000;fill-rule:nonzero;stroke:none;stroke-width:6.48140001;stroke-linejoin:round;stroke-miterlimit:4"
+   d="M 23,6.5258192 C 15.1,6.5258192 9,9.6 9,13 L 9,37 C 9,40.4 16.1,44 24,44 C 31.9,44 39,41.4 39,38 L 39,13 C 39,9.6 31.9,6.5 24,6.5 L 23,6.5258192 z "
+   id="path11"
+   sodipodi:nodetypes="cccscccc" /><path
+   style="fill:#000000;fill-rule:nonzero;stroke:none;stroke-width:6.48140001;stroke-linejoin:round;stroke-miterlimit:4"
+   d="M 24,5 C 15.2,5 7,8.1 7,12 L 7,18 C 7,21.9 15.2,24.8 24,24.8 C 32.8,24.8 41,21.9 41,18 L 41,12 C 41,8.1 32.8,5 24,5 z "
+   id="path13"
+   sodipodi:nodetypes="cccsccc" /><path
+   style="fill:#ffffff;fill-rule:nonzero;stroke:none;stroke-width:6.48140001;stroke-linejoin:round;stroke-miterlimit:4"
+   d="M 36,13 C 36,15.3 30.4,17 24,17 C 17.6,17 12,15.2 12,13 C 12,10.7 17.6,9 24,9 C 30.4,9 36,10.8 36,13 z "
+   id="path15"
+   sodipodi:nodetypes="csssc" />
+	<g
+   id="crop_x0020_marks"
+   style="fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4">
+		<path
+   style="fill:none;stroke:none"
+   d="M 48,48 L 0,48 L 0,0 L 48,0 L 48,48 z "
+   id="path18" />
+	</g>
+</svg>

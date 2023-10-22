@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Layout>
+    <Menuname>Usual Applications</Menuname>
+    <Menuname>Recon</Menuname>
+    <Menuname>Maps</Menuname>
+    <Menuname>OSINT</Menuname>
+    <Menuname>Video Downloaders</Menuname>
+    <Menuname>Frameworks</Menuname>
+    <Menuname>Reporting Tools</Menuname>
+    <Menuname>System Services</Menuname>
+    <Merge type="all"/>
+  </Layout>
+
+  <Menu>
+    <Name>Usual Applications</Name>
+    <Directory>usual-apps.directory</Directory>
+    <!-- This is the target of <Move> at the end ... -->
+  </Menu>
+
+  <Menu>
+    <Name>Recon</Name> 
+    <Directory>recon.directory</Directory>
+    <Include>
+      <And>  
+        <Category>recon</Category>
+      </And>
+       <And>
+        <Filename>kali-amass.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-finalrecon.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-sublist3r.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-wpscan.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-whatweb.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>Maps</Name>
+    <Directory>maps.directory</Directory>
+    <Include>
+      <And>
+        <Category>maps</Category>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>OSINT</Name>
+    <Directory>osint.directory</Directory>
+    <Include>
+      <And>
+        <Category>osint</Category>
+      </And>
+    </Include>
+    <Menu>
+     <Name>OSINT username</Name>
+     <Directory>osint-username.directory</Directory>
+     <Include>
+      <And>
+       <Category>osint-username</Category>
+      </And>
+      <And>
+        <Filename>kali-sherlock.desktop</Filename>
+      </And>
+     </Include>
+    </Menu>
+    <Menu>
+     <Name>OSINT phone-number</Name>
+     <Directory>osint-phone-number.directory</Directory>
+     <Include>
+      <And>
+       <Category>osint-phone-number</Category>
+      </And>
+     </Include>
+    </Menu>
+    <Menu>
+     <Name>OSINT social media</Name>
+     <Directory>osint-social-media.directory</Directory>
+     <Include>
+      <And>
+       <Category>osint-social-media</Category>
+      </And>
+     </Include>
+    </Menu>
+    <Menu>
+     <Name>OSINT email</Name>
+     <Directory>osint-email.directory</Directory>
+     <Include>
+      <And>
+       <Category>osint-email</Category>
+      </And>
+     </Include>
+    </Menu>
+  </Menu>
+
+  <Menu>
+    <Name>Video Downloaders</Name>
+    <Directory>video-downloaders.directory</Directory>
+    <Include>
+      <And>
+        <Category>video-downloaders</Category>
+      </And>
+    </Include>
+  </Menu>
+
+
+  <Menu>
+    <Name>Frameworks</Name>
+    <Directory>frameworks.directory</Directory>
+    <Include>
+      <And>
+        <Category>frameworks</Category>
+      </And>
+      <And>
+        <Category>01-info-gathering</Category>
+      </And>
+      <And>
+        <Category>001-identify</Category>
+      </And>
+      <And>
+        <Category>004-respond</Category>
+      </And>
+      <And>
+        <Filename>kali-theharvester.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-tcpdump.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-netcat.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>Reporting Tools</Name>
+    <Directory>reporting-tools.directory</Directory>
+    <Include>
+      <And>
+        <Category>reporting-tools</Category>
+      </And>
+      <And>
+        <Filename>kali-eyewitness.desktop</Filename>
+      </And>
+      <And>
+        <Filename>cherrytree.desktop</Filename>
+      </And>
+      <And>
+        <Filename>joplin.desktop</Filename>
+      </And>
+
+    </Include>
+  </Menu>
+ 
+  <!-- Move default top-level menus one level deeper -->
+  <Move>
+    <Old>Accessories</Old>
+    <New>Usual Applications/Accessories</New>
+  </Move>
+  <Move>
+    <Old>Universal Access</Old>
+    <New>Usual Applications/Universal Access</New>
+  </Move>
+  <Move>
+    <Old>Electronics</Old>
+    <New>Usual Applications/Electronics</New>
+  </Move>
+  <Move>
+    <Old>Development</Old>
+    <New>Usual Applications/Development</New>
+  </Move>
+  <Move>
+    <Old>Education</Old>
+    <New>Usual Applications/Education</New>
+  </Move>
+  <Move>
+    <Old>Science</Old>
+    <New>Usual Applications/Science</New>
+  </Move>
+  <Move>
+    <Old>Games</Old>
+    <New>Usual Applications/Games</New>
+  </Move>
+  <Move>
+    <Old>Graphics</Old>
+    <New>Usual Applications/Graphics</New>
+  </Move>
+  <Move>
+    <Old>Internet</Old>
+    <New>Usual Applications/Internet</New>
+  </Move>
+  <Move>
+    <Old>Web Applications</Old>
+    <New>Usual Applications/Web Applications</New>
+  </Move>
+  <Move>
+    <Old>Multimedia</Old>
+    <New>Usual Applications/Multimedia</New>
+  </Move>
+  <Move>
+    <Old>Office</Old>
+    <New>Usual Applications/Office</New>
+  </Move>
+  <Move>
+    <Old>Sundry</Old>
+    <New>Usual Applications/Sundry</New>
+  </Move>
+  <Move>
+    <Old>System</Old>
+    <New>Usual Applications/System</New>
+  </Move>
+  <Move>
+    <Old>System Settings</Old>
+    <New>Usual Applications/System Settings</New>
+  </Move>
+  <Move>
+    <Old>Utilities</Old>
+    <New>Usual Applications/Utilities</New>
+  </Move>
+  <Move>
+    <Old>Other</Old>
+    <New>Usual Applications/Other</New>
+  </Move>
+  <Move>
+    <Old>Hamradio</Old>
+    <New>Usual Applications/Hamradio</New>
+  </Move>
+</Menu>

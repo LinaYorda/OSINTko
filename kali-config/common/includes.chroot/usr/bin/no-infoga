@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/no-infoga
+exec python3 no-infoga.py  "$@"

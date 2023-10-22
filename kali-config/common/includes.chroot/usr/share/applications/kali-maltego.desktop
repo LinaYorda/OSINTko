@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=maltego
+Encoding=UTF-8
+Exec=maltego
+Icon=kali-maltego
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=01-info-gathering;01-07-osint-analysis;12-reporting;13-social-engineering-tools;001-identify;
+Comment=Visualise, Map and Mine Data
+X-Kali-Package=maltego
+Actions=ShowWebsite;
+StartupWMClass=Maltego

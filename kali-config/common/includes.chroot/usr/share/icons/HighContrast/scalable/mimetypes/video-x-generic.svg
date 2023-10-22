@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg2160"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docbase="/home/luca"
+   sodipodi:docname="video-x-generic_alternate.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:modified="true">
+  <defs
+     id="defs2162" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:grid-points="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="945"
+     inkscape:window-x="0"
+     inkscape:window-y="26">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="12"
+       id="guide3155" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2165">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+        <dc:title>Generic Video File</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>video</rdf:li>
+            <rdf:li>movie</rdf:li>
+            <rdf:li>file</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:coverage>A generic icon for video files</dc:coverage>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2192"
+       width="48"
+       height="48"
+       x="0"
+       y="0" />
+    <rect
+       y="6.9985147"
+       x="-43.00206"
+       height="33.995193"
+       width="38.001724"
+       id="rect4142"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:7.98537779;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2176"
+       width="38"
+       height="34"
+       x="-43"
+       y="7"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5113"
+       width="3.9060783"
+       height="2.9088433"
+       x="-41.039413"
+       y="9.0165749"
+       ry="0.86187845"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect5113"
+       id="use6084"
+       transform="translate(-1.657486e-2,-6.0394135)"
+       width="48"
+       height="48" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(-1.65746e-2,-12.039411)"
+       id="use6086"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(-1.65746e-2,-18.039411)"
+       id="use6090"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect5113"
+       id="use6092"
+       transform="translate(-1.657486e-2,-24.133335)"
+       width="48"
+       height="48" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(-1.657486e-2,-30.133335)"
+       id="use6094"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(27.074582,-3.9413452e-2)"
+       id="use6098"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect5113"
+       id="use6100"
+       transform="translate(26.983425,-6.0394135)"
+       width="48"
+       height="48" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(26.983425,-12.039413)"
+       id="use6102"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect5113"
+       id="use6104"
+       transform="translate(27.074582,-18.133335)"
+       width="48"
+       height="48" />
+    <use
+       height="48"
+       width="48"
+       transform="translate(27.074582,-24.133335)"
+       id="use6106"
+       xlink:href="#rect5113"
+       y="0"
+       x="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect5113"
+       id="use6108"
+       transform="translate(26.983425,-30.133335)"
+       width="48"
+       height="48" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2188"
+       width="20"
+       height="14.933332"
+       x="14"
+       y="26"
+       rx="1.4732958"
+       ry="1.5469612" />
+    <rect
+       ry="1.5469612"
+       rx="1.4732958"
+       y="7.0666676"
+       x="14"
+       height="14.933332"
+       width="20"
+       id="rect2190"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

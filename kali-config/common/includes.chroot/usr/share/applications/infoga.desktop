@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Infoga
+Type=Application
+Categories=osint-email;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "infoga -h"
+Path=
+StartupNotify=false

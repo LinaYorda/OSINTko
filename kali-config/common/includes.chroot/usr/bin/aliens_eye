@@ -1,0 +1,7 @@
+
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/Aliens_eye
+exec python3 aliens_eye.py  "$@"

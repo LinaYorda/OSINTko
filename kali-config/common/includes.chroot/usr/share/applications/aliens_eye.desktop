@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=AliensEye
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=/usr/share/Aliens_eye/photos/logo.png
+Exec=/usr/share/kali-menu/exec-in-shell "aliens_eye -h"
+Path=
+StartupNotify=false
+

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/blackbird
+exec python3 blackbird.py  "$@"

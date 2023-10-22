@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kali HiDPI Mode
+Comment=Toggle HiDPI desktop mode
+Exec=kali-hidpi-mode
+Terminal=false
+Type=Application
+Icon=kali-hidpi-mode
+OnlyShowIn=XFCE
+Categories=Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+Keywords=display;screen;hidpi;

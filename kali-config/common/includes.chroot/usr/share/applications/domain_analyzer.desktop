@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=Domain Analyzer
+Type=Application
+Categories=recon;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "domain_analyzer -h"
+Path=
+StartupNotify=false

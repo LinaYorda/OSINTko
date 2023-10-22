@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Name=Crawler
+Type=Application
+Categories=recon;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "crawler  -h"
+Path=
+StartupNotify=false

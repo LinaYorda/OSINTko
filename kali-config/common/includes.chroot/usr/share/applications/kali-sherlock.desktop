@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=sherlock
+Comment=Find usernames across social networks
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "sherlock -h"
+Icon=kali-sherlock
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=13-social-engineering-tools;
+X-Kali-Package=sherlock

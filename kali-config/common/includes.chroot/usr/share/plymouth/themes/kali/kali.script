@@ -1,0 +1,166 @@
+LOGO_RIGHT_OFFSET_RATIO = -0.13;
+LOGO_TOP_OFFSET_RATIO = -0.07;
+
+MAX_PASSWORD_LENGTH = 16;
+
+X_CENTER = Window.GetWidth() / 2;
+Y_CENTER = Window.GetHeight() / 2;
+
+status = "normal";
+
+Window.SetBackgroundTopColor(0, 0, 0);
+Window.SetBackgroundBottomColor(0, 0, 0);
+
+/* Images */
+container.image = Image("kali-logo-container.png");
+logo.image = Image("kali-logo.png");
+outline.image = Image("outline.png");
+fade.image = Image("kali-logo-fade.png");
+passwordDot.image = Image("password-dot.png");
+
+if (Window.GetHeight() < 800) {
+  container.image = Image("kali-logo-container_small.png");
+  logo.image = Image("kali-logo_small.png");
+  outline.image = Image("outline_small.png");
+  fade.image = Image("kali-logo-fade_small.png");
+  passwordDot.image = Image("password-dot_small.png");
+}
+
+// Kali logo can't be aligned by its natural center but by the circle center
+// formed inside its body curve. This can be easily calculated by the offset
+// ratio defined before.
+logo.rightOffset = logo.image.GetWidth() * LOGO_RIGHT_OFFSET_RATIO;
+logo.topOffset = logo.image.GetHeight() * LOGO_TOP_OFFSET_RATIO;
+
+fun centerKaliLogo (image, zIndex) {
+  sprite = Sprite(image);
+  sprite.SetX(X_CENTER - image.GetWidth() / 2 + logo.rightOffset);
+  sprite.SetY(Y_CENTER - image.GetHeight() / 2 + logo.topOffset);
+  sprite.SetZ(zIndex);
+  sprite.SetOpacity(0);
+  return sprite;
+}
+
+/* Kali logo sprites */
+logo.sprite = centerKaliLogo(logo.image, 4);
+fade.sprite = centerKaliLogo(fade.image, 3);
+container.sprite = centerKaliLogo(container.image, 2);
+outline.sprite = centerKaliLogo(outline.image, 1);
+
+fun showKaliLogo () {
+  logo.sprite.SetOpacity(1);
+  fade.sprite.SetOpacity(0.5);
+}
+
+/* -------------------------------- Message -------------------------------- */
+fun displayMessageCallback (text) {
+  prompt.image = Image.Text(text, 1, 1, 1);
+  prompt.sprite = Sprite(prompt.image);
+  prompt.sprite.SetPosition(
+    X_CENTER - prompt.image.GetWidth() / 2,
+    container.sprite.GetY() + container.image.GetHeight() + 50,
+    10000
+  );
+  global.prompt = prompt;
+}
+
+Plymouth.SetMessageFunction(displayMessageCallback);
+
+/* ---------------------------- Password Dialog ---------------------------- */
+fun passwordDialogSetup () {
+  passwordField.image = Image("password-field.png");
+  passwordField.sprite = Sprite(passwordField.image);
+  passwordField.y = container.sprite.GetY() + container.image.GetHeight();
+  passwordField.x = X_CENTER - passwordField.image.GetWidth() / 2;
+  passwordField.z = 5;
+  passwordField.sprite.SetX(passwordField.x);
+  passwordField.sprite.SetY(passwordField.y);
+  passwordField.sprite.SetZ(passwordField.z);
+  global.passwordField = passwordField;
+  showKaliLogo();
+}
+
+fun setPasswordDialogOpacity (opacity) {
+  passwordField.sprite.SetOpacity(opacity);
+
+  for (i = 0; passwordField.bullets[i]; i++)
+    passwordField.bullets[i].sprite.SetOpacity(opacity);
+}
+
+fun passwordDialogCallback (prompt, bullets) {
+  global.status = "password";
+
+  if (!global.passwordField)
+    passwordDialogSetup();
+  else
+    setPasswordDialogOpacity(1);
+
+  displayMessageCallback(prompt);
+
+  bulletWidth = passwordDot.image.GetWidth();
+
+  for (i = 0;
+      passwordField.bullets[i] || i < bullets && i < MAX_PASSWORD_LENGTH;
+      i++) {
+    if (!passwordField.bullets[i]) {
+      passwordField.bullets[i].sprite = Sprite(passwordDot.image);
+      passwordField.bullets[i].sprite.SetX(passwordField.x
+          + (i + 1) * bulletWidth);
+      passwordField.bullets[i].sprite.SetY(passwordField.y);
+      passwordField.bullets[i].sprite.SetZ(passwordField.z);
+    }
+
+    if (i < bullets)
+      passwordField.bullets[i].sprite.SetOpacity(1);
+    else
+      passwordField.bullets[i].sprite.SetOpacity(0);
+  }
+}
+
+Plymouth.SetDisplayPasswordFunction(passwordDialogCallback);
+
+fun displayNormalLogoCallback () {
+  global.status = "normal";
+  if (global.passwordField)
+    setPasswordDialogOpacity(0);
+  prompt.SetOpacity(0);
+  showKaliLogo();
+}
+
+Plymouth.SetDisplayNormalFunction(displayNormalLogoCallback);
+Plymouth.SetQuitFunction(displayNormalLogoCallback);
+
+
+if (Plymouth.GetMode() == "boot") {
+  outline.movementRange =
+      container.image.GetHeight() - outline.image.GetHeight();
+  outline.initialPosition = container.sprite.GetY() + outline.movementRange;
+  outline.sprite.SetY(outline.initialPosition);
+
+  container.sprite.SetOpacity(1);
+  outline.sprite.SetOpacity(1);
+
+  fun bootProgressCallback (duration, progress) {
+    if (global.status != "normal") return;
+    if (progress < 0.1)
+      logo.sprite.SetOpacity(progress / 0.1);
+    else if (progress < 0.9) {
+      relativeProgress = (progress - 0.1) / 0.8;
+      outline.sprite.SetY(outline.initialPosition
+          - outline.movementRange * relativeProgress);
+      if (progress > 0.8 && progress < 0.85) {
+        relativeProgress = (progress - 0.8) / 0.05;
+        fade.sprite.SetOpacity(relativeProgress);
+      } else if (progress > 0.85) {
+        relativeProgress = (progress - 0.85) / 0.05;
+        fade.sprite.SetOpacity(1 - relativeProgress);
+      }
+    } else {
+      opacity = (1 - progress) / 0.1;
+      logo.sprite.SetOpacity(opacity);
+    }
+  }
+
+  Plymouth.SetBootProgressFunction(bootProgressCallback);
+}
+

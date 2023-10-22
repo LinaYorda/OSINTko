@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/osgint
+exec python3 osgint.py  "$@"

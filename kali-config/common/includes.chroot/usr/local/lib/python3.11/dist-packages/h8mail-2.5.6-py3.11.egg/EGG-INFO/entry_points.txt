@@ -1,0 +1,2 @@
+[console_scripts]
+h8mail = h8mail.__main__:main

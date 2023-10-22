@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Zutty
+Comment=Zero-cost Unicode Teletype
+Exec=zutty
+Terminal=false
+Icon=zutty
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;cmd;
+X-AppStream-Ignore=true

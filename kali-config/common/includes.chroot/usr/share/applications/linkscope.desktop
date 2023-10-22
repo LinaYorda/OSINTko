@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=LinkScope
+Comment=Link Analysis
+Type=Application
+Categories=frameworks;
+Terminal=true
+Icon=/usr/share/LinkScope/Icon.ico
+Exec=/usr/share/kali-menu/exec-in-shell "LinkScope -h"
+Path=
+StartupNotify=false
+

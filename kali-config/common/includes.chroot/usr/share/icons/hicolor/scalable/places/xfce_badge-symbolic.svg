@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg3224"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="badge-xfce.svg">
+  <defs
+     id="defs3226" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="-9.5555043"
+     inkscape:cy="5.0515356"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="853"
+     inkscape:window-height="742"
+     inkscape:window-x="1703"
+     inkscape:window-y="256"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3229">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-364,-527.36218)">
+    <path
+       style="fill:#bebebe;fill-opacity:1;stroke:none"
+       d="m 372,527.36218 c -4.41828,0 -8,3.58172 -8,8 0,4.41828 3.58172,8 8,8 4.41828,0 8,-3.58172 8,-8 0,-4.41828 -3.58172,-8 -8,-8 z m -3.59091,4.88636 0.29546,0.38637 c 0.17287,0.21182 0.52334,0.62482 0.77272,0.93182 0.24938,0.30698 0.46513,0.56818 0.47728,0.56818 0.0124,0 0.27436,-0.29692 0.56818,-0.65909 0.73752,-0.90901 0.93811,-1.18024 0.95454,-1.18182 0.008,-6.8e-4 0.30226,0.27926 0.63637,0.61363 l 0.59091,0.61364 -0.6591,0.70455 c -0.37287,0.38614 -0.78105,0.77542 -0.88636,0.88636 l -0.18182,0.20455 0.11364,0.13636 c 0.0684,0.0721 0.34847,0.35425 0.61364,0.63636 0.26516,0.28212 0.61192,0.65434 0.77272,0.81818 l 0.29546,0.29546 -0.61364,0.61364 -0.61364,0.63636 -0.86363,-0.97727 c -0.47266,-0.53958 -0.87386,-1 -0.88637,-1 -0.0124,0 -0.38869,0.45102 -0.8409,1 -0.45222,0.54898 -0.83015,1 -0.84091,1 -0.0109,0 -0.28971,-0.26693 -0.61364,-0.59091 l -0.59091,-0.59091 0.95455,-0.93182 0.93181,-0.95455 -0.65909,-0.70454 c -0.37105,-0.39397 -0.77392,-0.81639 -0.88636,-0.93182 l -0.20455,-0.20454 0.68182,-0.6591 0.68182,-0.65909 z m 5.31818,0.22728 1.68182,0 1.68182,0 0,0.70454 0,0.70455 -0.79546,0 -0.79545,0 0,0.47727 0,0.47727 0.75,0 0.75,0 0,0.63637 0,0.65909 -0.75,0 -0.75,0 0,1.06818 0,1.04545 -0.88636,0 -0.88637,0 0,-2.88636 0,-2.88636 z"
+       id="path4318"
+       inkscape:export-filename="/home/knome/greeter_badges_preview.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

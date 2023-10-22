@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=theharvester
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "theHarvester -h"
+Icon=kali-theharvester
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;
+X-Kali-Package=theharvester

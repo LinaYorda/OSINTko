@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=YT-DLP
+Type=Application
+Categories=video-downloaders;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "yt-dlp  -h"
+Path=
+StartupNotify=false

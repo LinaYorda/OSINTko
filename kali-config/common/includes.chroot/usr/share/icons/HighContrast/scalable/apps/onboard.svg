@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   height="48"
+   width="48"
+   version="1.0"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="onboard.svg">
+  <defs
+     id="defs3984" />
+  <sodipodi:namedview
+     pagecolor="#949494"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     id="namedview3982"
+     showgrid="false"
+     inkscape:zoom="6.3333333"
+     inkscape:cx="18.792221"
+     inkscape:cy="24"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+ <metadata id="metadata7">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Full Keyboard-Alpha.svg</dc:title>
+    <cc:license rdf:resource="https://www.gnu.org/licenses/gpl.txt"/>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Onboard Devel Team at https://launchpad.net/~onboard</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title>GPL-3+ license</dc:title>
+     </cc:Agent>
+    </dc:rights>
+    <dc:publisher>
+     <cc:Agent>
+      <dc:title>Onboard Devel Team</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+    <dc:source>https://launchpad.net/onboard</dc:source>
+    <dc:relation>This file is part of Onboard</dc:relation>
+    <dc:contributor>
+     <cc:Agent>
+      <dc:title>Copyright © 2016, Francesco Fumanti &lt;francesco.fumanti@gmx.net&gt;
+Copyright © 2013, marmuta &lt;marmvta@gmail.com&gt;</dc:title>
+     </cc:Agent>
+    </dc:contributor>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+  <rect
+     x="2.4064367"
+     y="22.648193"
+     width="22.944851"
+     height="22.945396"
+     ry="2.7108912"
+     rx="2.7108266"
+     style="fill:#ffffff;fill-opacity:0.94017998"
+     id="rect4765" />
+  <rect
+     x="5.2010069"
+     y="25.246546"
+     width="17.552729"
+     height="17.553146"
+     ry="2.0737197"
+     rx="2.0736701"
+     style="fill:#000000;fill-opacity:1"
+     id="rect2208" />
+  <rect
+     x="22.64871"
+     y="22.648193"
+     width="22.944851"
+     height="22.945396"
+     ry="2.7108912"
+     rx="2.7108266"
+     style="fill:#ffffff;fill-opacity:0.94017998"
+     id="rect4767" />
+  <rect
+     x="22.64871"
+     y="2.4064648"
+     width="22.944851"
+     height="22.945396"
+     ry="2.7108912"
+     rx="2.7108266"
+     style="fill:#ffffff;fill-opacity:0.94017998"
+     id="rect4769" />
+  <rect
+     x="2.4064367"
+     y="2.4064648"
+     width="22.944851"
+     height="22.945396"
+     ry="2.7108912"
+     rx="2.7108266"
+     style="fill:#ffffff;fill-opacity:0.94017998"
+     id="rect3835" />
+  <rect
+     x="5.2010069"
+     y="5.2013168"
+     width="17.552729"
+     height="17.553146"
+     ry="2.0737197"
+     rx="2.0736701"
+     style="fill:#000000;fill-opacity:1"
+     id="rect1307" />
+  <rect
+     x="25.247025"
+     y="5.2013168"
+     width="17.552729"
+     height="17.553146"
+     ry="2.0737197"
+     rx="2.0736701"
+     style="fill:#000000;fill-opacity:1"
+     id="rect2202" />
+  <rect
+     x="25.247025"
+     y="25.246546"
+     width="17.552729"
+     height="17.553146"
+     ry="2.0737197"
+     rx="2.0736701"
+     style="fill:#000000;fill-opacity:1"
+     id="rect2210" />
+  <rect
+     x="29.28359"
+     y="9.2446451"
+     width="9.4786453"
+     height="9.4788713"
+     ry="1.1198258"
+     rx="1.1197991"
+     style="fill:#ffffff"
+     id="rect3837" />
+  <rect
+     x="9.2380486"
+     y="29.289871"
+     width="9.4786453"
+     height="9.4788713"
+     ry="1.1198258"
+     rx="1.1197991"
+     style="fill:#ffffff"
+     id="rect3839" />
+  <rect
+     x="29.28359"
+     y="29.289871"
+     width="9.4786453"
+     height="9.4788713"
+     ry="1.1198258"
+     rx="1.1197991"
+     style="fill:#ffffff"
+     id="rect3841" />
+  <rect
+     x="9.2380486"
+     y="9.2446451"
+     width="9.4786453"
+     height="9.4788713"
+     ry="1.1198258"
+     rx="1.1197991"
+     style="fill:#ffffff"
+     id="rect4763" />
+</svg>

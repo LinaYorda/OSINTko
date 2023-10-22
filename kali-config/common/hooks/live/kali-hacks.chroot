@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Handle systems where /lib is not merged in /usr/lib
+if [ ! -h /lib ]; then
+    mv /usr/lib/live/config/* /lib/live/config/
+fi
+
+# Enable cryptsetup in the initramfs for later use if the user
+# adds an encrypted persistence partition.
+# This is until https://bugs.debian.org/908220 has a proper fix.
+if [ -e /etc/cryptsetup-initramfs/conf-hook ]; then
+    if grep -q '^#CRYPTSETUP=' /etc/cryptsetup-initramfs/conf-hook; then
+	sed -i -e 's/^#CRYPTSETUP=.*/CRYPTSETUP=y/' /etc/cryptsetup-initramfs/conf-hook
+    else
+	echo "CRYPTSETUP=y" >>/etc/cryptsetup-initramfs/conf-hook
+    fi
+fi
+
+# Rebuild the initramfs to include the last change
+update-initramfs -u
+
+# Run updatedb to initialize the database for the locate command
+if [ -x "$(which updatedb 2>/dev/null)" ]; then
+    updatedb
+fi
+
+# Mark kernel related packages on hold so that they are not upgraded in
+# the live system
+for pkg in $(dpkg-query -W -f'${db:Status-Status} ${binary:Package}\n' 'linux-image-*' 'linux-headers-*' 'linux-kbuild-*' | sed -ne 's/^installed //p')
+do
+    apt-mark hold $pkg
+done

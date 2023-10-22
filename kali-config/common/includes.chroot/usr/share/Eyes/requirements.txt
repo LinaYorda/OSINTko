@@ -1,0 +1,7 @@
+argparse
+httpx
+datetime
+opencv-python
+requests
+imagehash
+scrape-search-engine

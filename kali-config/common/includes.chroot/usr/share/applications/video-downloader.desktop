@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Video Downloader
+Comment=Video Downloader
+Type=Application
+Categories=video-downloaders;
+Terminal=true
+Icon=/usr/share/Video-Downloader/icon.png
+Exec=/usr/share/kali-menu/exec-in-shell "video-downloader"
+Path=
+StartupNotify=false

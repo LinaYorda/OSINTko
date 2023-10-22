@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg5541"
+   sodipodi:version="0.32"
+   inkscape:version="0.45+devel"
+   sodipodi:docname="library-podcast.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs5543" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313708"
+     inkscape:cx="41.766757"
+     inkscape:cy="18.181623"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="973"
+     inkscape:window-x="0"
+     inkscape:window-y="48">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5549" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5546">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Podcast library</dc:title>
+        <dc:date>June 2007</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Andreas Nilsson</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://www.fsf.org/licensing/licenses/gpl.html" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.03040127999999997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5553"
+       sodipodi:cx="24.094986"
+       sodipodi:cy="24.158312"
+       sodipodi:rx="5.6675463"
+       sodipodi:ry="5.6675463"
+       d="M 29.762532,24.158312 A 5.6675463,5.6675463 0 1 1 18.42744,24.158312 A 5.6675463,5.6675463 0 1 1 29.762532,24.158312 z"
+       transform="matrix(3.8940688,0,0,3.8699342,-69.864911,-69.454358)" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.62301720999999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5539"
+       sodipodi:cx="24.094986"
+       sodipodi:cy="24.158312"
+       sodipodi:rx="5.6675463"
+       sodipodi:ry="5.6675463"
+       d="M 29.762532,24.158312 A 5.6675463,5.6675463 0 1 1 18.42744,24.158312 A 5.6675463,5.6675463 0 1 1 29.762532,24.158312 z"
+       transform="matrix(2.4726096,0,0,2.456508,-35.59963,-35.45887)" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.80656894000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5537"
+       sodipodi:cx="24.094986"
+       sodipodi:cy="24.158312"
+       sodipodi:rx="5.6675463"
+       sodipodi:ry="5.6675463"
+       d="M 29.762532,24.158312 A 5.6675463,5.6675463 0 1 1 18.42744,24.158312 A 5.6675463,5.6675463 0 1 1 29.762532,24.158312 z"
+       transform="matrix(1.0526115,0,0,1.0490217,-1.393386,-1.2798122)" />
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   xml:space="preserve"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docname="edit-redo.svg"
+   sodipodi:docbase="/home/luca/svn/gnome2/gnome-themes/icon-themes/HighContrast-SVG/scalable/actions"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Edit Redo</dc:title><dc:date>Novembrer 2007</dc:date><dc:creator><cc:Agent><dc:title>Jakub Steiner</dc:title></cc:Agent></dc:creator><dc:source>http://www.gnome.org/</dc:source><dc:subject><rdf:Bag><rdf:li>edit</rdf:li><rdf:li>redo</rdf:li></rdf:Bag></dc:subject><dc:contributor><cc:Agent><dc:title>Canvas sizing and pixel perfect by Luca Ferretti</dc:title></cc:Agent></dc:contributor><cc:license
+         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" /></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+         rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+   id="defs15">
+		
+	
+			
+			
+		</defs><sodipodi:namedview
+   inkscape:window-height="949"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   width="48px"
+   height="48px"
+   showgrid="true"
+   inkscape:grid-points="true"
+   inkscape:zoom="15.1875"
+   inkscape:cx="24"
+   inkscape:cy="24"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:current-layer="svg2" />
+	<rect
+   style="opacity:1;fill:none;fill-opacity:0.3359375;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="rect2187"
+   width="48"
+   height="48"
+   x="0"
+   y="0" /><path
+   sodipodi:nodetypes="cccccccccscccccccc"
+   id="path3166"
+   d="M 24.9,5.1 L 40,20 C 41,21 41,21 40,22 L 25,37 C 24.072543,37.072543 24,36 24,36 L 24,28 L 20,28 C 18.6,28 16,27.8 16,31 L 16,35 C 16,38.8 22.178827,40.043779 22.5,41.2 C 23,43 20,43 20,43 L 15,43 C 9.9,43.2 8,37.9 8,33 L 8,26 C 8,18.1 11.7,14 18,14 L 24,14 L 24,6 C 24,6 24,5 24.9,5.1 z "
+   style="fill-rule:nonzero;stroke:#ffffff;stroke-miterlimit:4;fill:#ffffff;fill-opacity:1;stroke-opacity:1;stroke-linejoin:round;stroke-linecap:round;stroke-width:8;stroke-dasharray:none" /><path
+   style="fill-rule:nonzero;stroke:none;stroke-miterlimit:4"
+   d="M 24.9,5.1 L 40,20 C 41,21 41,21 40,22 L 25,37 C 24.072543,37.072543 24,36 24,36 L 24,28 L 20,28 C 18.6,28 16,27.8 16,31 L 16,35 C 16,38.8 22.178827,40.043779 22.5,41.2 C 23,43 20,43 20,43 L 15,43 C 9.9,43.2 8,37.9 8,33 L 8,26 C 8,18.1 11.7,14 18,14 L 24,14 L 24,6 C 24,6 24,5 24.9,5.1 z "
+   id="path9"
+   sodipodi:nodetypes="cccccccccscccccccc" />
+	
+</svg>

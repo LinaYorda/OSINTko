@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=spiderfoot-cli
+Encoding=UTF-8
+Exec=/usr/share/kali-menu/exec-in-shell "spiderfoot-cli --help"
+Icon=kali-spiderfoot
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-07-osint-analysis;001-identify;
+X-Kali-Package=spiderfoot

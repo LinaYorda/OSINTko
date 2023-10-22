@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfwm4" version="1.0">
+  <property name="general" type="empty">
+    <property name="button_layout" type="string" value="O|HMC"/>
+    <property name="theme" type="string" value="Kali-Dark"/>
+    <property name="title_font" type="string" value="Cantarell Bold 9"/>
+    <property name="easy_click" type="string" value="Super"/>
+    <property name="workspace_count" type="int" value="4"/>
+    <property name="cycle_workspaces" type="bool" value="false"/>
+    <property name="scroll_workspaces" type="bool" value="false"/>
+    <property name="wrap_windows" type="bool" value="false"/>
+    <property name="box_resize" type="bool" value="true"/>
+    <property name="cycle_raise" type="bool" value="true"/>
+    <property name="borderless_maximize" type="bool" value="false"/>
+    <property name="workspace_names" type="array">
+      <value type="string" value="1"/>
+      <value type="string" value="2"/>
+      <value type="string" value="3"/>
+      <value type="string" value="4"/>
+      <value type="string" value="5"/>
+      <value type="string" value="6"/>
+      <value type="string" value="7"/>
+      <value type="string" value="8"/>
+      <value type="string" value="9"/>
+      <value type="string" value="0"/>
+    </property>
+  </property>
+</channel>

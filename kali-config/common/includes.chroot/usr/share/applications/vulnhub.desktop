@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=VulnHub
+Comment=Vulnerable by design - lab to download virtual machines to test your skills
+Icon=vulnhub
+Type=Link
+URL=https://www.vulnhub.com/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

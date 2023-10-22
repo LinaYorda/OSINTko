@@ -1,0 +1,22 @@
+[Icon Theme]
+Name=Flat-Remix-Purple-Light
+Comment=Flat Remix ICON theme for light interfaces
+Inherits=Flat-Remix-Blue-Light
+
+Example=folder
+
+Directories=apps/scalable,places/scalable
+
+[apps/scalable]
+Context=Applications
+Size=128
+MinSize=1
+MaxSize=512
+Type=Scalable
+
+[places/scalable]
+Context=Places
+Size=128
+MinSize=1
+MaxSize=512
+Type=Scalable

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GitSint
+Type=Application
+Categories=osint-social-media;
+Terminal=true
+Icon=/usr/share/GitSint/gitsint.jpg
+Exec=/usr/share/kali-menu/exec-in-shell "gitsint -h"
+Path=
+StartupNotify=false

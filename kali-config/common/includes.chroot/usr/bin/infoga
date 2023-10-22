@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/Infoga
+exec python3 infoga.py "$@"

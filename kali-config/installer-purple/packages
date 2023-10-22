@@ -1,0 +1,21 @@
+# Installer for Kali Purple
+
+# Metapackages
+# You can customize the set of Kali metapackages (groups of tools) available
+# in the installer ISO.
+# For the complete list see: https://tools.kali.org/kali-metapackages
+kali-linux-firmware
+kali-system-gui
+kali-themes-purple  # temporary, until we do it a better way
+
+# Tools
+kali-tools-detect
+kali-tools-identify
+kali-tools-protect
+kali-tools-recover
+kali-tools-respond
+
+# Graphical desktops
+kali-desktop-xfce
+kali-desktop-gnome
+kali-desktop-kde

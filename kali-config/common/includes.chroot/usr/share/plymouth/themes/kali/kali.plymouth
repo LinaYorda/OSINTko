@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Kali
+Description=Kali plymouth theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/kali
+ScriptFile=/usr/share/plymouth/themes/kali/kali.script

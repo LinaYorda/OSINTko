@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/home/luca/Desktop"
+   sodipodi:docname="accessories-character-map.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.2666667"
+     inkscape:cx="30"
+     inkscape:cy="18"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:grid-points="true"
+     gridtolerance="10000"
+     guidetolerance="10000"
+     inkscape:guide-points="true"
+     inkscape:window-width="1024"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     objecttolerance="10000">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2392"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="" />
+        <dc:title>Accessories Character Map</dc:title>
+        <dc:date>May 2009</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>character map</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A keyboard key with à letter on it</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:none"
+       id="rect1306"
+       width="60"
+       height="60"
+       x="0"
+       y="0"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:none;fill-opacity:0.41596638000000002"
+       id="rect2394"
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       ry="0" />
+    <rect
+       ry="6.992806"
+       y="4"
+       x="4"
+       height="40"
+       width="40"
+       id="rect3182"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round" />
+    <rect
+       style="fill:#000000;fill-opacity:1"
+       id="rect2398"
+       width="40"
+       height="40"
+       x="4"
+       y="4"
+       ry="6.992806" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3172"
+       width="22"
+       height="22"
+       x="13"
+       y="13"
+       ry="1.8129499" />
+    <path
+       transform="scale(1.0150248,0.9851976)"
+       style="font-size:21.76926041px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+       d="M 25.883051,27.123514 C 25.089374,27.123519 24.490578,27.25816 24.086662,27.527436 C 23.689822,27.796722 23.491404,28.193557 23.491409,28.717942 C 23.491404,29.199817 23.650847,29.578936 23.969738,29.855301 C 24.295704,30.124585 24.745687,30.259225 25.319687,30.259223 C 26.035401,30.259225 26.63774,30.004117 27.126705,29.493897 C 27.615655,28.976598 27.860133,28.331741 27.860142,27.559324 L 27.860142,27.123514 L 25.883051,27.123514 M 31.6974,25.688529 L 31.6974,32.480793 L 27.860142,32.480793 L 27.860142,30.716292 C 27.349917,31.439101 26.775923,31.967033 26.13816,32.300091 C 25.500382,32.626063 24.724428,32.789049 23.810295,32.789049 C 22.577266,32.789049 21.574549,32.431189 20.80214,31.715467 C 20.036813,30.992661 19.654151,30.057264 19.654152,28.909274 C 19.654151,27.513268 20.132479,26.489292 21.089137,25.837342 C 22.052877,25.185405 23.562268,24.859434 25.617313,24.859426 L 27.860142,24.859426 L 27.860142,24.561799 C 27.860133,23.959468 27.622741,23.520115 27.147965,23.243739 C 26.673171,22.960294 25.932649,22.818567 24.926394,22.818558 C 24.111459,22.818567 23.353221,22.90006 22.651677,23.063037 C 21.950125,23.226032 21.298182,23.470511 20.695845,23.796474 L 20.695845,20.894614 C 21.510772,20.696208 22.329244,20.547395 23.151264,20.448174 C 23.973275,20.341891 24.795291,20.288744 25.617313,20.288732 C 27.764468,20.288744 29.312833,20.713924 30.262414,21.564274 C 31.219059,22.40756 31.697387,23.78231 31.6974,25.688529 M 24.703175,15.069636 L 27.7007,19.066337 L 25.617313,19.066337 L 21.69502,15.069636 L 24.703175,15.069636"
+       id="text3184" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 8,10 L 11,13 L 11,35 L 8,38 L 8,10"
+       id="path3188" />
+    <path
+       id="path3190"
+       d="M 40,10 L 37,13 L 37,35 L 40,38 L 40,10"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 38,40 L 35,37 L 13,37 L 10,40 L 38,40"
+       id="path3192" />
+    <path
+       id="path3194"
+       d="M 38,8 L 35,11 L 13,11 L 10,8 L 38,8"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>

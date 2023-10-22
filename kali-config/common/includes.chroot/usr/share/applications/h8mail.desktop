@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=H8mail
+Type=Application
+Categories=osint-email;
+Terminal=true
+Icon=/usr/share/h8mail/h8mail.png
+Exec=/usr/share/kali-menu/exec-in-shell h8mail -h
+Path=
+StartupNotify=false

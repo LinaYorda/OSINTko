@@ -1,0 +1,61 @@
+# Live image
+# You always want these:
+kali-linux-core
+kali-desktop-live
+
+# Metapackages
+# You can customize the set of Kali metapackages (groups of tools) to install
+# For the complete list see: https://tools.kali.org/kali-metapackages
+#kali-linux-core
+#kali-tools-top10
+#kali-linux-default
+#kali-linux-large
+#kali-linux-everything
+
+# Graphical desktop
+kali-desktop-xfce
+
+
+
+# Kali applications
+recon-ng
+spiderfoot
+sherlock
+maltego
+theharvester
+nmap
+drawing
+wireshark
+cherrytree
+eyewitness
+tcpdump
+joplin
+amass
+finalrecon
+wpscan
+whatweb
+marble
+foxtrotgps
+gnome-maps
+menulibre
+yt-dlp
+vim
+
+# Browsers
+epiphany-browser 
+tor
+torbrowser-launcher
+firefox-esr
+
+# Other applications & packages
+git
+curl
+python3
+python3-pip
+build-essential
+
+
+
+
+
+

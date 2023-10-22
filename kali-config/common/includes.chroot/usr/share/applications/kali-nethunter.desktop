@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=NetHunter
+Comment=Penetration testing tools on mobile devices
+Icon=kali-nethunter
+Type=Link
+URL=https://www.kali.org/kali-nethunter/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

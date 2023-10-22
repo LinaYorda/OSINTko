@@ -1,0 +1,18 @@
+language: python
+dist: xenial
+python:
+- '3.9'
+install:
+- python setup.py install
+- pip install tox-travis
+script:
+- tox --recreate
+deploy:
+  provider: pypi
+  skip_existing: true
+  user: iojw
+  on:
+    tags: true
+  distributions: sdist bdist_wheel
+  password:
+    secure: cKBb9sZm0aO4pujI3do+yiRFk4UDRLdwcOBESv3oGMoWhY/n4zK+QnmJRKRQbm7vmkegdDFBRY3lUU9/M6L1DgVzNalCpaORcx9LfOELhg8cL7IoOn2zrDg2sAW2QeZgZ/PtB7+wvzJ5GFoQz6BDYy/oXQ1jruo3IPR/w44iXxMrAWI9lP6G29mE1uDUYc1tGFrLte12mdigRKxBiF9pyXE+Pe5MhLk8lzz1Gi0zi691A+Hx9PCrSEMRdO9UxtwnmEdcQSQuV+yw8KOxeMyhCly7edX07b2Gw55VQYhUYFzHSaoZ/NA1kTogUYXsOpwbhakoaEKfwABHy7h+lbZfObRubQcFiOHGHqNCpi76OcoVpEtMcin9urUyV0Sw3YPOHro1yR3aY5KiW+Ch6FddGHks8LgnqoFnDweespHKN6k6IYy2enaHZHlkMMHjeebw6GV13otwGvTyKBav1SURthWN6FmLsm9tWUyUFIKoiGQ/RK3ZITW0S6/7B2W6nI09REyylv/a/1EnZsb9qEtlIBHZ0drJi8DFKqalzvWZ17V5XUk4skd95FZNxzRlm1nZy/f71emgtuPG9qKrwvPZ6/oYPB7xrtuQEuUyIr8S2m8yykiL1IYzorkTSwj3YXV7pZNiTHQCa77S9kLjqUsRXpMP8/fQV1mvvzqEKSpL/68=

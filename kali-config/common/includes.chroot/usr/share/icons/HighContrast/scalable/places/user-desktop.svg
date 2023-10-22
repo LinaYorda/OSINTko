@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   xml:space="preserve"
+   id="svg1358"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   sodipodi:docname="user-desktop.svg"
+   sodipodi:docbase="/home/luca/Artwork/blackwhite-icon-theme/scalable/places"
+   version="1.0">
+<metadata
+   id="metadata1375">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+        rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      <dc:title>Desktop Icon</dc:title>
+      <dc:description>A desktop rapresentation</dc:description>
+      <cc:license
+         rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      <dc:subject>
+        <rdf:Bag>
+          <rdf:li>destkop</rdf:li>
+          <rdf:li>storage</rdf:li>
+          <rdf:li>files</rdf:li>
+          <rdf:li>default location</rdf:li>
+        </rdf:Bag></dc:subject>
+    </cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/LGPL/2.1/"><cc:permits
+         rdf:resource="http://web.resource.org/cc/Reproduction" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/Distribution" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/Notice" /><cc:permits
+         rdf:resource="http://web.resource.org/cc/DerivativeWorks" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/ShareAlike" /><cc:requires
+         rdf:resource="http://web.resource.org/cc/SourceCode" /></cc:License></rdf:RDF></metadata><defs
+   id="defs1373" /><sodipodi:namedview
+   inkscape:window-height="948"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:document-units="pt"
+   showgrid="true"
+   gridspacingy="1.0000000pt"
+   gridspacingx="1.0000000pt"
+   gridoriginy="0.0000000pt"
+   gridoriginx="0.0000000pt"
+   gridtolerance="1.0000000pt"
+   gridempspacing="5"
+   inkscape:grid-points="true"
+   guidetolerance="1.0000000pt"
+   inkscape:zoom="12.783333"
+   inkscape:cx="30"
+   inkscape:cy="30"
+   inkscape:window-x="6"
+   inkscape:window-y="46"
+   inkscape:current-layer="svg1358" />
+	<g
+   transform="matrix(0.835125,0,0,0.975526,3.952545,-4.537321)"
+   id="g7237"
+   style="fill:none;fill-rule:nonzero;stroke:#ffffff;stroke-width:8.53124809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+			
+			<path
+   sodipodi:nodetypes="ccccccccc"
+   style="fill:none;stroke:#ffffff;stroke-width:8.53124809;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   d="M 3.489276,9.6303633 C 2.0232151,9.6303633 1.0756011,9.9884698 1.0756011,11.69595 L 1.0756011,46.81092 C 1.1734787,47.954354 2.2863539,48.876507 3.489276,48.876507 L 44.750402,48.857955 C 45.953324,48.857955 46.935425,48.21193 46.935425,46.81092 L 46.935425,11.69595 C 46.935425,10.29494 45.724672,9.6303633 44.52175,9.6303633 L 3.489276,9.6303633 z "
+   id="path7239" />
+			
+		</g><g
+   style="fill-rule:nonzero;stroke:#000000;stroke-width:7;stroke-miterlimit:4;stroke-dasharray:none"
+   id="g1361"
+   transform="matrix(0.828612,0,0,0.968248,4.108744,-4.32458)">
+			
+			<path
+   id="path1365"
+   d="M 3.489276,9.6303633 C 2.2824386,9.6303633 1.0756011,10.663157 1.0756011,11.69595 L 1.0756011,46.81092 C 1.1734787,47.954354 2.2863539,48.876507 3.489276,48.876507 L 44.750402,48.857955 C 45.953324,48.857955 46.935425,47.843714 46.935425,46.81092 L 46.935425,11.69595 C 46.935425,10.663157 45.724672,9.6303633 44.52175,9.6303633 L 3.489276,9.6303633 z "
+   style="stroke:none;stroke-width:7;stroke-miterlimit:4;stroke-dasharray:none"
+   sodipodi:nodetypes="ccccccccc" />
+			
+		</g>
+	<g
+   id="crop_x0020_marks"
+   style="fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4">
+		<path
+   style="fill:none;stroke:none"
+   d="M 48,48 L 0,48 L 0,0 L 48,0 L 48,48 z "
+   id="path1370" />
+	</g>
+<rect
+   style="fill:#fffffe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="rect5771"
+   width="20.868217"
+   height="14.201575"
+   x="9"
+   y="24"
+   rx="1.0639535"
+   ry="1.25" /><rect
+   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+   id="rect6499"
+   width="15"
+   height="4"
+   x="12"
+   y="26"
+   rx="0.0096899532"
+   ry="0.01162785" /><rect
+   ry="1.2499999"
+   rx="1.0639535"
+   y="9"
+   x="23.131786"
+   height="11"
+   width="15.868214"
+   id="rect7987"
+   style="fill:#fffffe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /><rect
+   ry="0.01162785"
+   rx="0.0096899532"
+   y="11"
+   x="26"
+   height="3.7984247"
+   width="10"
+   id="rect7989"
+   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" /></svg>

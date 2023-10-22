@@ -1,0 +1,4 @@
+
+[tests]
+pytest
+pytest-cov

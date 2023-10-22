@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=Kali Docs
+Comment=Official Kali Linux documentation website
+Icon=kali-docs
+Type=Link
+URL=https://www.kali.org/docs/
+Categories=15-kali-offsec-links;
+X-Kali-Package=kali-menu

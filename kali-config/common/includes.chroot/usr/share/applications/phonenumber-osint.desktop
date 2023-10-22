@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Phone number OSINT
+Type=Application
+Categories=osint-phone-number;
+Terminal=true
+Icon=/usr/share/tracer/tracer.png
+Exec=/usr/share/kali-menu/exec-in-shell "phonenumber-osint -h"
+Path=
+StartupNotify=false

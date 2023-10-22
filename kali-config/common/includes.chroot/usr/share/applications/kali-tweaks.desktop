@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Kali Tweaks
+Comment=Tool to adjust advanced configuration settings for Kali Linux
+Encoding=UTF-8
+# Use x-terminal-emulator and `Terminal=false` as it is the only way to run a
+# terminal app from xfce settings dialog
+Exec=x-terminal-emulator -e kali-tweaks -title "Kali Tweaks"
+Icon=kali-tweaks
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Settings;X-XFCE-SettingsDialog;
+X-Kali-Package=kali-tweaks

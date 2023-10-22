@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   id="svg1900"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   sodipodi:docbase="/home/calum/src/gnome2/gnome-themes/icon-themes/HighContrast-SVG/scalable"
+   sodipodi:docname="orca.svg">
+  <defs
+     id="defs1902" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.166667"
+     inkscape:cx="29.997406"
+     inkscape:cy="26.863127"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1268"
+     inkscape:window-height="793"
+     inkscape:window-x="0"
+     inkscape:window-y="6" />
+  <metadata
+     id="metadata1905">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Orca Screen Reader and Magnifier</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Luca Ferretti &lt;elle.uca@libero.it&gt;</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>orca</rdf:li>
+            <rdf:li>screen reader</rdf:li>
+            <rdf:li>screen magnifier</rdf:li>
+            <rdf:li>braille monitor</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A comic strip bubble with a magnify glass and a &quot;O&quot; in Braille insidX</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>This icon was inspired by existing access tecnology icon in GNOME control center</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3687"
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       rx="0"
+       ry="0" />
+    <rect
+       ry="2.8351648"
+       rx="2.8351648"
+       y="3.978112"
+       x="4.0054722"
+       height="32.043777"
+       width="39.989056"
+       id="rect3684"
+       style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:8.01094437;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path4578"
+       d="M 22.030715,44.016484 C 26.170649,41.718981 28.178053,39.693237 26.983516,35.571966 L 34.000631,35.538822 C 34.246803,39.711572 30.686453,43.707965 22.030715,44.016484 z "
+       style="fill:white;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="fill:white;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect1908"
+       width="40"
+       height="32"
+       x="4"
+       y="4"
+       rx="2.8351648"
+       ry="2.8351648" />
+    <path
+       style="fill:white;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 22.030715,44.016484 C 26.170649,41.718981 28.178053,39.693237 26.983516,35.571966 L 34.000631,35.538822 C 34.246803,39.711572 30.686453,43.707965 22.030715,44.016484 z "
+       id="path2797"
+       sodipodi:nodetypes="cccc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:black;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6369"
+       sodipodi:cx="30.786884"
+       sodipodi:cy="15.04918"
+       sodipodi:rx="5.8032789"
+       sodipodi:ry="5.8032789"
+       d="M 36.590163 15.04918 A 5.8032789 5.8032789 0 1 1  24.983605,15.04918 A 5.8032789 5.8032789 0 1 1  36.590163 15.04918 z"
+       transform="translate(-15.98361,0)" />
+    <rect
+       style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect7258"
+       width="5.2458978"
+       height="10.721304"
+       x="2.7986431"
+       y="27.167025"
+       rx="2.8351629"
+       ry="2.8351629"
+       transform="matrix(0.866025,-0.5,0.5,0.866025,0,0)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:black;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path5458"
+       sodipodi:cx="9.9918032"
+       sodipodi:cy="10.008197"
+       sodipodi:rx="2.8934426"
+       sodipodi:ry="2.9590166"
+       d="M 12.885246 10.008197 A 2.8934426 2.9590166 0 1 1  7.0983605,10.008197 A 2.8934426 2.9590166 0 1 1  12.885246 10.008197 z"
+       transform="translate(20.11475,1.95082)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path5458"
+       id="use6359"
+       transform="translate(1.999817e-7,16)"
+       width="48"
+       height="48" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path5458"
+       id="use6361"
+       transform="translate(8,8)"
+       width="48"
+       height="48" />
+  </g>
+</svg>

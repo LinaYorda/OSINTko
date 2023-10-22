@@ -1,0 +1,36 @@
+# Directories
+.build/*
+binary/*
+binary.*/*
+cache/*
+chroot/*
+config/*
+images
+local/*
+simple-cdd/images/*
+simple-cdd/tmp/*
+# Files
+.mirror
+build.log
+chroot.files
+chroot.packages.install
+chroot.packages.live
+config/binary
+config/bootstrap
+config/common
+config/source
+live-image-*.contents
+live-image-*.files
+live-image-*.hybrid.iso.zsync
+live-image-*.packages
+# Overwritten due to build.sh
+simple-cdd/debian-cd/*
+simple-cdd/profiles/kali.downloads
+kali-config/common/includes.chroot/usr/lib
+kali-config/common/includes.chroot/usr/share/LinkScope
+kali-config/common/includes.chroot/usr/share/Video-Downloader
+kali-config/common/includes.chroot/usr/share/ClipGrab
+# Miscellaneous
+.lock
+.stage
+prepare.log

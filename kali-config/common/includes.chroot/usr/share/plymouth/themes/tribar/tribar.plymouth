@@ -1,0 +1,4 @@
+[Plymouth Theme]
+Name=Tribar
+Description=Text mode theme with tricolor progress bar
+ModuleName=tribar

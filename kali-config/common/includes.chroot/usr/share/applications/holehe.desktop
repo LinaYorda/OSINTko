@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Holehe
+Type=Application
+Categories=osint-email;
+Terminal=true
+Icon=/usr/share/holehe/holehe.png
+Exec=/usr/share/kali-menu/exec-in-shell holehe -h
+Path=
+StartupNotify=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Python (v2.7)
+Comment=Python Interpreter (v2.7)
+Exec=/usr/bin/python2.7
+Icon=/usr/share/pixmaps/python2.7.xpm
+Terminal=true
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=true

@@ -1,0 +1,1113 @@
+[
+    {
+        "url": "https://8tracks.com/{}",
+        "domain": "8tracks.com",
+        "err_text_pattern": "<title.*?>8tracks radio</title>",
+        "err_on_dot": true,
+        "category": 9
+    },
+    {
+        "url": "https://9gag.com/u/{}",
+        "domain": "9gag.com",
+        "err_text_pattern": "<title.*?Nothing\\shere.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://about.me/{}",
+        "domain": "about.me",
+        "err_text_pattern": "<title.*?>about\\.me</title",
+        "category": 16
+    },
+    {
+        "url": "https://independent.academia.edu/{}",
+        "domain": "academia.edu",
+        "err_text_pattern": "<title.*?>Academia\\.edu</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://community.airtable.com/u/{}",
+        "domain": "airtable.com",
+        "err_text_pattern": "<title.*?>Airtable Community.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://aminoapps.com/u/{}",
+        "domain": "aminoapps.com",
+        "err_text_pattern": "<title.*?>Amino</title>",
+        "category": 4
+    },
+    {
+        "url": "https://www.answers.com/u/{}",
+        "domain": "answers.com",
+        "err_text_pattern": "<title.*?>404 Not Found.*?</title>",
+        "category": 9
+    },
+    {
+        "url": "https://archive.org/details/@{}",
+        "domain": "archive.org",
+        "err_text_pattern": "<title.*?>cannot find.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://ask.fm/{}",
+        "domain": "ask.fm",
+        "err_text_pattern": "<title.*?>Ask\\sand\\sAnswer.*?</title>",
+        "category": 7
+    },
+    {
+        "url": "https://bandcamp.com/{}",
+        "domain": "bandcamp.com",
+        "err_text_pattern": "<title.*?>Bandcamp</title>",
+        "category": 9
+    },
+    {
+        "url": "https://beacons.ai/{}",
+        "domain": "beacons.ai",
+        "err_text_pattern": "<title.*?>Beacons</title>",
+        "category": 16
+    },
+    {
+        "url": "https://br.bebee.com/bee/{}",
+        "domain": "bebee.com",
+        "err_text_pattern": "class=\\\"text-danger bb-expired\\\"",
+        "category": 16
+    },
+    {
+        "url": "https://www.behance.net/{}",
+        "domain": "behance.net",
+        "err_text_pattern": "<title.*?>Behance ::.+?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://bigo.tv/en/{}",
+        "domain": "bigo.tv",
+        "err_text_pattern": "ignoreUids:\\[\\]",
+        "category": 6
+    },
+    {
+        "url": "https://blip.fm/{}",
+        "domain": "blip.fm",
+        "err_text_pattern": "404.*?Page Not Found",
+        "category": 9
+    },
+    {
+        "url": "https://{}.blogspot.com/",
+        "domain": "blogspot.com",
+        "err_text_pattern": "https://www\\.blogger\\.com/create-blog\\.g?defaultSubdomain=",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://www.buymeacoffee.com/{}",
+        "domain": "buymeacoffee.com",
+        "err_text_pattern": "<title.*?>Buy Me a Coffee -.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://www.buzzfeed.com/{}",
+        "domain": "buzzfeed.com",
+        "err_text_pattern": "<title.*?>Page not found</title>",
+        "category": 16
+    },
+    {
+        "url": "https://api.caffeine.tv/v1/users/{}",
+        "display_url": "https://www.caffeine.tv/{}/profile/",
+        "domain": "caffeine.tv",
+        "err_text_pattern": "\"_account\":[\"Could not be found.\"]",
+        "err_on_dot": true,
+        "category": 6
+    },
+    {
+        "url": "https://campsite.bio/{}",
+        "domain": "campsite.bio",
+        "err_text_pattern": "<title.*?>Campsite</title>",
+        "category": 15
+    },
+    {
+        "url": "https://www.canva.com/p/{}/",
+        "domain": "canva.com",
+        "err_text_pattern": "<title.*?>Amazingly Simple Graphic.*?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://www.caringbridge.org/visit/{}",
+        "domain": "caringbridge.org",
+        "err_text_pattern": "<title>CaringBridge</title>",
+        "err_ignore_code": true,
+        "category": 16
+    },
+    {
+        "url": "https://cash.app/${}",
+        "domain": "cash.app",
+        "err_text_pattern": "<title.*?Cash App - Page.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://chaturbate.com/{}/",
+        "domain": "chaturbate.com",
+        "err_text_pattern": "<h1>HTTP 404.*?</h1>",
+        "err_url_pattern": "(?:chaturbate\\.[a-z]+?\\/?)$",
+        "category": 2
+    },
+    {
+        "url": "https://www.chess.com/member/{}",
+        "domain": "chess.com",
+        "err_text_pattern": "<title.*?Missing Page</title>",
+        "category": 14
+    },
+    {
+        "url": "https://www.codechef.com/users/{}",
+        "domain": "codechef.com",
+        "err_url_pattern": "(?:codechef\\.[a-zA-Z]+?\\/?)$",
+        "category": 5
+    },
+    {
+        "url": "https://codepen.io/{}",
+        "domain": "codepen.io",
+        "err_text_pattern": "<title.*?>404 on.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://codeforces.com/profile/{}",
+        "domain": "codeforces.com",
+        "err_url_pattern": "(?:codeforces\\.[a-z]+?\\/?)$",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://coderwall.com/{}",
+        "domain": "coderwall.com",
+        "err_text_pattern": "<title.*?404 : Unable.*?</title>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://codewars.com/users/{}",
+        "domain": "codewars.com",
+        "err_text_pattern": "<title.*?Codewars \\| Achieve.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://creativemarket.com/users/{}",
+        "domain": "creativemarket.com",
+        "err_text_pattern": "<title.*?>Whoomp, there.*?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://crokes.com/{}/",
+        "domain": "crokes.com",
+        "err_text_pattern": "<title.*?>Page Not Found.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://www.crunchyroll.com/user/{}",
+        "domain": "crunchyroll.com",
+        "err_text_pattern": "<title>Crunchyroll - Page not found</title>",
+        "category": 1
+    },
+    {
+        "url": "https://curiouscat.live/api/v2.1/profile?username={}",
+        "display_url": "https://curiouscat.live/{}",
+        "domain": "curiouscat.live",
+        "err_text_pattern": "\\\"profile_does_not_exist\\\"",
+        "category": 7
+    },
+    {
+        "url": "https://dev.to/{}",
+        "domain": "dev.to",
+        "err_text_pattern": "<title.*?>The page you.*?</title>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://deviantart.com/{}",
+        "domain": "deviantart.com",
+        "err_text_pattern": "<title.*?>DeviantArt: 404</title>",
+        "category": 4
+    },
+    {
+        "url": "https://disqus.com/by/{}/?",
+        "domain": "disqus.com",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://dribbble.com/{}/about",
+        "domain": "dribbble.com",
+        "err_text_pattern": "<title.*?>Sorry, the page.*?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://dzone.com/users/{}",
+        "domain": "dzone.com",
+        "err_url_pattern": "\\/users\\/(?:[^/?=]+?\\/?)$",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://ebay.com/usr/{}",
+        "domain": "ebay.com",
+        "err_text_pattern": "<title.*?>ebay profile - error.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://ello.co/{}",
+        "domain": "ello.co",
+        "err_text_pattern": "<title.*?>.+?\\[404\\] Not Found</title>",
+        "category": 4
+    },
+    {
+        "url": "https://www.eporner.com/profile/{}/",
+        "domain": "eporner.com",
+        "err_text_pattern": "<strong.*?Profile not found\\.</strong>",
+        "category": 2
+    },
+    {
+        "url": "https://www.etsy.com/people/{}",
+        "domain": "etsy.com",
+        "err_text_pattern": "<title.*?>Etsy -.*?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://www.experts-exchange.com/members/{}",
+        "domain": "experts-exchange.com",
+        "err_text_pattern": "<title.*?>Not Found</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://facebook.com/{}",
+        "domain": "facebook.com",
+        "err_text_pattern": "<head><meta",
+        "category": 1
+    },
+    {
+        "url": "https://fandom.com/u/{}",
+        "domain": "fandom.com",
+        "err_text_pattern": "<title.*?Not Found</title>",
+        "category": 3
+    },
+    {
+        "url": "https://fanlink.to/{}",
+        "domain": "fanlink.to",
+        "err_text_pattern": "<title.*?>ToneDen -.*?</title>",
+        "category": 15
+    },
+    {
+        "url": "https://www.fark.com/users/{}",
+        "domain": "fark.com",
+        "err_text_pattern": "<title>FARK\\.com: User profiles: view</title>",
+        "category": 16
+    },
+    {
+        "url": "https://www.fiverr.com/{}",
+        "domain": "fiverr.com",
+        "err_text_pattern": "<title.*?>Fiverr -.*?</title>",
+        "err_url_pattern": "(?:fiverr\\.[a-z]+?\\/?)$",
+        "category": 16
+    },
+    {
+        "url": "https://flickr.com/photos/{}",
+        "domain": "flickr.com",
+        "err_text_pattern": "<h2 class=\\\"status.*?>404</h2>",
+        "category": 4
+    },
+    {
+        "url": "https://flipboard.com/@{}",
+        "domain": "flipboard.com",
+        "err_text_pattern": "<title.*?>Flipboard:.+?</title>",
+        "category": 13
+    },
+    {
+        "url": "https://members.fotki.com/{}/about/",
+        "domain": "fotki.com",
+        "err_text_pattern": "<title.*?>Member Not Found.*?</title>",
+        "err_on_dot": true,
+        "category": 1
+    },
+    {
+        "url": "https://forum.freecodecamp.org/u/{}",
+        "domain": "freecodecamp.org",
+        "err_text_pattern": "<title.*?>The freeCodeCamp.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://www.gaiaonline.com/profiles/{}/",
+        "domain": "gaiaonline.com",
+        "err_text_pattern": "<title.*?Error.*?</title>",
+        "err_on_dot": true,
+        "category": 14
+    },
+    {
+        "url": "https://auth.geeksforgeeks.org/user/{}/profile",
+        "domain": "geeksforgeeks.org",
+        "err_text_pattern": "<title.*?>Login.*?</title>",
+        "err_url_pattern": ".*?\\?to=.*?",
+        "category": 5
+    },
+    {
+        "url": "https://meta.getaether.net/u/{}",
+        "domain": "getaether.net",
+        "err_text_pattern": "<title.*?>Meta Aether</title>",
+        "category": 1
+    },
+    {
+        "url": "https://giphy.com/{}",
+        "domain": "giphy.com",
+        "err_text_pattern": "(?:<title.*?>404 Not Found</title>)|(?:<h1.*?Explore.*?</h1>)",
+        "err_url_pattern": ".*?\\/explore\\/.*?",
+        "category": 11
+    },
+    {
+        "url": "https://gitea.com/{}",
+        "domain": "gitea.com",
+        "err_text_pattern": "</title.*?>Page Not Found.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://gitee.com/{}",
+        "domain": "gitee.com",
+        "err_text_pattern": "<title.*?\\(404\\)</title>",
+        "category": 5
+    },
+    {
+        "url": "https://github.com/{}",
+        "domain": "github.com",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://gitlab.com/{}",
+        "domain": "gitlab.com",
+        "err_text_pattern": "<title.*?>Sign in.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://www.girlsaskguys.com/user/{}",
+        "domain": "girlsaskguys.com",
+        "err_text_pattern": "<title.*?>This doesn.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://www.goodreads.com/{}",
+        "domain": "goodreads.com",
+        "err_text_pattern": "<title.*?>Page not found</title>",
+        "category": 16
+    },
+    {
+        "url": "https://en.gravatar.com/{}",
+        "domain": "gravatar.com",
+        "err_text_pattern": "<title.*?>Gravatar.*?</title>",
+        "err_url_pattern": "profiles\\/no-such-user",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://{}.gumroad.com/",
+        "domain": "gumroad.com",
+        "err_text_pattern": "<title.*?>Page not found.+?</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://www.gutefrage.net/nutzer/{}",
+        "domain": "gutefrage.net",
+        "err_text_pattern": "<title.*?>Gutefrage.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://gfycat.com/@{}",
+        "domain": "gfycat.com",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://hackerone.com/{}?type=user",
+        "display_url": "https://hackerone.com/{}",
+        "domain": "hackerone.com",
+        "err_text_pattern": "<h1>Page not found</h1>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://{}.hashnode.dev",
+        "domain": "hashnode.com",
+        "err_text_pattern": "<p.*?css-4mei6l.*?>404</p>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://hubpages.com/@{}",
+        "domain": "hubpages.com",
+        "err_text_pattern": "<title.*?>Page Not Found</title>",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://hypel.ink/{}",
+        "domain": "hypel.ink",
+        "err_text_pattern": "<title.*?>Hype Link</title>",
+        "category": 15
+    },
+    {
+        "url": "https://ifttt.com/p/{}",
+        "domain": "ifttt.com",
+        "err_text_pattern": "<title.*?404 Error</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://ifunny.co/user/{}",
+        "domain": "ifunny.co",
+        "err_text_pattern": "<title.*?>404 - page.*?</title>",
+        "category": 11
+    },
+    {
+        "url": "https://imageshack.com/user/{}",
+        "domain": "imageshack.com",
+        "err_url_pattern": "imageshack\\.(?:[a-z]+?\\/?)$",
+        "category": 1
+    },
+    {
+        "url": "https://imgur.com/search?q=user:{}",
+        "display_url": "https://imgur.com/user/{}",
+        "domain": "imgur.com",
+        "err_text_pattern": "Found.*?<i>0</i>.*?results for",
+        "err_url_pattern": "search\\?q=.*?",
+        "err_on_dot": true,
+        "category": 11
+    },
+    {
+        "url": "https://instabio.cc/{}",
+        "domain": "instabio.cc",
+        "err_text_pattern": "<img.*?alt=\\\"404\\\">",
+        "category": 15
+    },
+    {
+        "url": "https://instagram.com/{}/guides",
+        "display_url": "https://instagram.com/{}",
+        "domain": "instagram.com",
+        "err_text_pattern": "<title.*?>Instagram</title>",
+        "category": 1
+    },
+    {
+        "url": "https://issuu.com/{}",
+        "domain": "issuu.com",
+        "err_text_pattern": "<title.*?>Issuu - Page.*?</title>",
+        "category": 3
+    },
+    {
+        "url": "https://itch.io/profile/{}",
+        "domain": "itch.io",
+        "err_text_pattern": "<title.*?>itch\\.io</title>",
+        "category": 14
+    },
+    {
+        "url": "https://{}.jimdosite.com/",
+        "domain": "jimdosite.com",
+        "err_text_pattern": "<head></head>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://community.k6.io/u/{}",
+        "domain": "k6.io",
+        "err_text_pattern": "<title.*?>k6 community.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://www.kaggle.com/{}",
+        "domain": "kaggle.com",
+        "err_text_pattern": "<title.*?>Kaggle: Your Home for Data Science</title>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://ws2.kik.com/user/{}",
+        "domain": "kik.com",
+        "err_text_pattern": "<title.*?>Not Found</title>",
+        "category": 7
+    },
+    {
+        "url": "https://last.fm/user/{}",
+        "domain": "last.fm",
+        "err_text_pattern": "<title.*?>Page\\sNot\\sFound.*?</title>",
+        "category": 9
+    },
+    {
+        "url": "https://letterboxd.com/{}/",
+        "domain": "letterboxd.com",
+        "err_text_pattern": "<title.*?>Letterboxd.*?</title>",
+        "category": 6
+    },
+    {
+        "url": "https://letterpile.com/@{}",
+        "domain": "letterpile.com",
+        "err_text_pattern": "<title.*?>LetterPile</title>",
+        "category": 3
+    },
+    {
+        "url": "https://lichess.org/@/{}",
+        "domain": "lichess.org",
+        "err_text_pattern": "<title.*?Page Not Found.*?</title>",
+        "category": 14
+    },
+    {
+        "url": "https://www.liinks.co/{}",
+        "domain": "liinks.co",
+        "err_text_pattern": "<title.*?>Liinks.*?</title>",
+        "err_url_pattern": "type=NO_USER",
+        "category": 15
+    },
+    {
+        "url": "https://line.me/R/ti/p/@{}",
+        "domain": "line.me",
+        "err_text_pattern": "<p.*?404 Not Found</p>",
+        "category": 7
+    },
+    {
+        "url": "https://linkedin.com/in/{}",
+        "domain": "linkedin.com",
+        "err_url_pattern": "\\.[a-z]+?\\/authwall\\?.*?",
+        "category": 16
+    },
+    {
+        "url": "https://linkfly.to/{}",
+        "domain": "linkfly.to",
+        "err_text_pattern": "<title.*?>404 - Oops.*?</title>",
+        "category": 15
+    },
+    {
+        "url": "https://linktr.ee/{}",
+        "domain": "linktr.ee",
+        "err_text_pattern": "\",\"statusCode\":404",
+        "category": 15
+    },
+    {
+        "url": "https://{}.livejournal.com/",
+        "domain": "livejournal.com",
+        "err_text_pattern": "<title.*?Unknown Journal</title>",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://lnk.bio/{}",
+        "domain": "lnk.bio",
+        "err_text_pattern": "<title.*?>Not Found.*?</title>",
+        "category": 15
+    },
+    {
+        "url": "https://mastodon.social/@{}",
+        "domain": "mastodon.social",
+        "err_text_pattern": "<title.*?>The page you.*?</title>",
+        "err_on_dot": true,
+        "category": 1
+    },
+    {
+        "url": "https://medium.com/@{}",
+        "domain": "medium.com",
+        "err_text_pattern": "<title.*?>Medium</title>",
+        "category": 1
+    },
+    {
+        "url": "https://meetme.com/{}",
+        "domain": "meetme.com",
+        "err_text_pattern": "<title.*?>MeetMe.*?</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://www.memecenter.com/{}",
+        "domain": "memecenter.com",
+        "err_text_pattern": "<title.*?>Meme Center -.*?</title>",
+        "category": 11
+    },
+    {
+        "url": "https://micro.blog/{}",
+        "domain": "micro.blog",
+        "err_text_pattern": "<body>User not found</body>",
+        "category": 3
+    },
+    {
+        "url": "https://mix.com/{}",
+        "domain": "mix.com",
+        "err_text_pattern": "<title.*?>Mix.*?</title>",
+        "err_on_dot": true,
+        "category": 1
+    },
+    {
+        "url": "https://myanimelist.net/profile/{}",
+        "domain": "myanimelist.net",
+        "err_text_pattern": "<title.*?>404 Not.*?</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://myspace.com/{}",
+        "domain": "myspace.com",
+        "err_text_pattern": "<h1>Page Not Found</h1>",
+        "category": 1
+    },
+    {
+        "url": "https://ngl.link/{}",
+        "domain": "ngl.link",
+        "err_text_pattern": "Could not find user",
+        "category": 16
+    },
+    {
+        "url": "https://www.npmjs.com/~{}",
+        "domain": "npmjs.com",
+        "err_text_pattern": "<h1.*?>not found</h1>",
+        "category": 5
+    },
+    {
+        "url": "https://community.octoprint.org/u/{}",
+        "domain": "octoprint.org",
+        "err_text_pattern": "<title.*?>OctoPrint.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://odysee.com/@{}",
+        "domain": "odysee.com",
+        "err_text_pattern": "<title.*?>Odysee</title>",
+        "category": 6
+    },
+    {
+        "url": "https://omlet.gg/profile/{}",
+        "domain": "omlet.gg",
+        "err_text_pattern": "<title>Omlet Arcade</title>",
+        "category": 6
+    },
+    {
+        "url": "https://pastebin.com/u/{}",
+        "domain": "pastebin.com",
+        "err_text_pattern": "<title.*?>.+?Not Found.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://www.patreon.com/{}/creators",
+        "display_url": "https://www.patreon.com/{}",
+        "domain": "patreon.com",
+        "err_text_pattern": "<span.*?>404</span>",
+        "category": 16
+    },
+    {
+        "url": "https://www.pexels.com/@{}",
+        "domain": "pexels.com",
+        "err_text_pattern": "<title.*?>Error 404.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://picsart.com/u/{}",
+        "domain": "picsart.com",
+        "err_text_pattern": "<title.*?>Page not found</title>",
+        "category": 1
+    },
+    {
+        "url": "https://pinterest.com/{}",
+        "domain": "pinterest.com",
+        "err_url_pattern": "(?:\/ideas\/)$",
+        "err_text_pattern": "<title.*?></title>",
+        "category": 4
+    },
+    {
+        "url": "https://pixabay.com/users/{}/",
+        "domain": "pixabay.com",
+        "err_text_pattern": "<title.*?>Error 404</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://www.plurk.com/{}",
+        "domain": "plurk.com",
+        "err_text_pattern": "<title.*?>User Not Found.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://pornhub.com/users/{}",
+        "domain": "pornhub.com",
+        "err_text_pattern": "<title.*?>Page Not Found</title>",
+        "category": 2
+    },
+    {
+        "url": "https://www.prezi.community/u/{}",
+        "domain": "prezi.community",
+        "err_text_pattern": "<title.*?Prezi Community</title>",
+        "category": 12
+    },
+    {
+        "url": "https://www.producthunt.com/@{}",
+        "domain": "producthunt.com",
+        "err_text_pattern": "<title.*?>Product Hunt:.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://www.polywork.com/{}",
+        "domain": "polywork.com",
+        "err_text_pattern": "<title.*?>The page you were looking.*?</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://www.pscp.tv/{}",
+        "domain": "pscp.tv",
+        "err_text_pattern": "<title.*?>404</title>",
+        "category": 16
+    },
+    {
+        "url": "https://pypi.org/user/{}/",
+        "domain": "pypi.org",
+        "err_text_pattern": "<title.*?>Page Not Found.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://quizlet.com/{}",
+        "domain": "quizlet.com",
+        "err_text_pattern": "<title.*?Page Unavailable.*?</title>",
+        "err_url_pattern": "\\/\\w+?\\/\\d{9}",
+        "category": 16
+    },
+    {
+        "url": "https://quora.com/profile/{}",
+        "domain": "quora.com",
+        "err_text_pattern": "<title.*?error.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://redbubble.com/people/{}",
+        "domain": "redbubble.com",
+        "err_text_pattern": "<h1>This is a lost cause\\.</h1>",
+        "category": 4
+    },
+    {
+        "url": "https://reddit.com/user/{}",
+        "domain": "reddit.com",
+        "err_text_pattern": "<h3.*?>Sorry, nobody.*?name\\.</h3>",
+        "err_on_dot": true,
+        "category": 1
+    },
+    {
+        "url": "https://www.redgifs.com/users/{}",
+        "domain": "redgifs.com",
+        "err_text_pattern": "<h2.*?text-centered.*?>Page Not Found</h2>",
+        "category": 2
+    },
+    {
+        "url": "https://redtube.com/users/{}",
+        "domain": "redtube.com",
+        "err_text_pattern": "<title.*?>Page Not Found</title>",
+        "category": 2
+    },
+    {
+        "url": "https://replit.com/@{}",
+        "domain": "replit.com",
+        "err_text_pattern": "<title.*?>Replit - 404 - Replit</title>",
+        "category": 5
+    },
+    {
+        "url": "https://www.reverbnation.com/{}",
+        "domain": "reverbnation.com",
+        "err_text_pattern": "<title.*?Page not Found.*?</title>",
+        "category": 9
+    },
+    {
+        "url": "https://sharesome.com/api/users/{}?stats=1&profile=1",
+        "display_url": "https://sharesome.com/{}",
+        "domain": "sharesome.com",
+        "err_text_pattern": "<title.*?>404 \\|.*?</title>",
+        "err_on_dot": true,
+        "category": 2
+    },
+    {
+        "url": "https://shoptly.com/{}",
+        "domain": "shoptly.com",
+        "err_text_pattern": "<title.*?>Sell Digital.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://{}.skyrock.com/profil/",
+        "domain": "skyrock.com",
+        "err_text_pattern": "<title.*?Page not Found.*?</title>",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://{}.slack.com/",
+        "domain": "slack.com",
+        "err_text_pattern": "<title.*?>There's been a gli.*?</title>",
+        "err_on_dot": true,
+        "category": 7
+    },
+    {
+        "url": "https://www.slideshare.net/{}",
+        "domain": "slideshare.net",
+        "err_text_pattern": "<title.*?>Username available</title>",
+        "category": 12
+    },
+    {
+        "url": "https://snapchat.com/add/{}",
+        "domain": "snapchat.com",
+        "err_text_pattern": "<span.*?>Sorry,.*?not\\sfound</span>",
+        "category": 1
+    },
+    {
+        "url": "https://soundcloud.com/{}",
+        "domain": "soundcloud.com",
+        "err_text_pattern": "<title.*?>Something went wrong.*?</title>",
+        "category": 9
+    },
+    {
+        "url": "https://sourceforge.net/u/{}/profile/",
+        "domain": "sourceforge.net",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 5
+    },
+    {
+        "url": "https://spankbang.com/profile/{}",
+        "domain": "spankbang.com",
+        "err_text_pattern": "<title.*?Free Porn Videos.*?</title>",
+        "category": 2
+    },
+    {
+        "url": "https://spreely.com/{}",
+        "domain": "spreely.com",
+        "err_text_pattern": "<title.*?>Spreely.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://open.spotify.com/user/{}",
+        "domain": "spotify.com",
+        "err_text_pattern": "<title.*?>Page not found</title>",
+        "category": 9
+    },
+    {
+        "url": "https://{}.start.page/",
+        "domain": "start.page",
+        "err_text_pattern": "<title.*?>Page not found!</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://steamcommunity.com/id/{}",
+        "domain": "steamcommunity.com",
+        "err_text_pattern": "<title.*?>.*?::\\s*?Error.*?</title>",
+        "category": 14
+    },
+    {
+        "url": "https://steemit.com/@{}",
+        "domain": "steemit.com",
+        "err_text_pattern": "<title.*?>Page Not Found.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://www.strava.com/athletes/{}",
+        "domain": "strava.com",
+        "err_text_pattern": "<title.*?Strava \\| Run and Cycling.*?</title>",
+        "err_on_dot": true,
+        "category": 10
+    },
+    {
+        "url": "https://{}.substack.com/",
+        "domain": "substack.com",
+        "err_text_pattern": "<title.*?>Discover Substack.*?</title>",
+        "err_url_pattern": "\\.\\[a-z]+?\\/discover",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://www.taringa.net/{}",
+        "domain": "taringa.net",
+        "err_text_pattern": "<title.*?>Taringa!.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://t.me/{}",
+        "domain": "telegram.com",
+        "err_text_pattern": "<i class=\\\"tgme_icon_user\\\"></i>",
+        "err_url_pattern": "telegram\\.org",
+        "category": 7
+    },
+    {
+        "url": "https://tellonym.me/{}",
+        "domain": "tellonym.me",
+        "err_text_pattern": "<div.*?Create an account.*?answer",
+        "category": 7
+    },
+    {
+        "url": "https://textbin.net/u/{}",
+        "domain": "textbin.net",
+        "err_text_pattern": "<title.*?>TextBin</title>",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://tiktok.com/@{}",
+        "domain": "tiktok.com",
+        "err_text_pattern": "<title.*?>Couldn't find this account.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://tinder.com/@{}",
+        "domain": "tinder.com",
+        "err_text_pattern": "<title.*?>(?:Tinder.*?)?</title>",
+        "category": 8
+    },
+    {
+        "url": "https://www.tripadvisor.com/Profile/{}",
+        "domain": "tripadvisor.com",
+        "err_text_pattern": "<title.*?404 Not Found.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://{}.tumblr.com/",
+        "domain": "tumblr.com",
+        "err_text_pattern": "<title.*?Not found\\.</title>",
+        "err_on_dot": true,
+        "category": 1
+    },
+    {
+        "url": "https://twitch.tv/{}",
+        "domain": "twitch.tv",
+        "err_text_pattern": "content='@twitch'><link",
+        "category": 6
+    },
+    {
+        "url": "https://unsplash.com/@{}",
+        "domain": "unplash.com",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://untappd.com/user/{}",
+        "domain": "untappd.com",
+        "err_text_pattern": "<title.*?Untappd \\| 404</title>",
+        "category": 16
+    },
+    {
+        "url": "https://valence.community/visualization/profile/{}",
+        "domain": "valence.community",
+        "err_text_pattern": "<title.*?valence</title>",
+        "category": 16
+    },
+    {
+        "url": "https://www.vice.com/en/contributor/{}",
+        "domain": "vice.com",
+        "err_text_pattern": "<title.*?>vice\\.com.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://vimeo.com/{}",
+        "domain": "vimeo.com",
+        "err_text_pattern": "<title.*?VimeUhOh</title>",
+        "category": 6
+    },
+    {
+        "url": "https://vk.com/{}",
+        "domain": "vk.com",
+        "err_text_pattern": "<title.*?>404 Not.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://vsco.co/{}/gallery",
+        "domain": "vsco.co",
+        "err_text_pattern": "<title.*?>Page not found.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://community.w2g.tv/u/{}",
+        "domain": "w2g.tv",
+        "err_text_pattern": "<title.*?>Watch2Gether.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://wakatime.com/@{}",
+        "domain": "wakatime.com",
+        "err_text_pattern": "<title.*?>404: Not Found - WakaTime</title>",
+        "category": 5
+    },
+    {
+        "url": "https://wattpad.com/user/{}",
+        "domain": "wattpad.com",
+        "err_text_pattern": "<title.*?>Wattpad -.*?</title>",
+        "category": 4
+    },
+    {
+        "url": "https://{}.webflow.io/",
+        "domain": "webflow.com",
+        "err_text_pattern": "<title.*?>404 -.*?</title>",
+        "err_on_dot": true,
+        "category": 16
+    },
+    {
+        "url": "https://{}.webnode.com/",
+        "domain": "webnode.com",
+        "err_text_pattern": "We are sorry, but the page .*?\\.webnode\\.com",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://{}.weebly.com/",
+        "domain": "weebly.com",
+        "err_text_pattern": "<title.*?>404 - Page.*?</title>",
+        "err_on_dot": true,
+        "category": 3
+    },
+    {
+        "url": "https://weheartit.com/{}",
+        "domain": "weheartit.com",
+        "err_text_pattern": "<title.*?>The Page.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://wikipedia.org/wiki/User:{}",
+        "domain": "wikipedia.org",
+        "err_text_pattern": "<div.*?message.*?>\\\".*?\\\" is not registered on this wiki.*?</div>",
+        "category": 16
+    },
+    {
+        "url": "https://{}.wordpress.com",
+        "domain": "wordpress.com",
+        "err_url_pattern": "\\/typo\\/\\?subdomain=.+?",
+        "err_on_dot": true,
+        "category": 5
+    },
+    {
+        "url": "https://wt.social/u/{}",
+        "domain": "wt.social",
+        "err_text_pattern": "<title.*?404 Error.*?</title>",
+        "category": 1
+    },
+    {
+        "url": "https://xhamster.com/users/{}",
+        "domain": "xhamster.com",
+        "err_text_pattern": "<title.*?>User not found</title>",
+        "category": 2
+    },
+    {
+        "url": "https://xvideos.com/profiles/{}",
+        "domain": "xvideos.com",
+        "err_text_pattern": "<title.*?Unknown.*?XVIDEOS.*?</title>",
+        "category": 2
+    },
+    {
+        "url": "https://news.ycombinator.com/user?id={}",
+        "domain": "ycombinator.com",
+        "err_text_pattern": "No such user\\.",
+        "category": 3
+    },
+    {
+        "url": "https://{}.yelp.com/",
+        "domain": "yelp.com",
+        "err_url_pattern": "yelp\\.[a-z]+?/[^/?=]+$",
+        "err_on_dot": true,
+        "err_text_pattern": "<title.*?>Restaurants, Dentists, Bars,.*?</title>",
+        "category": 16
+    },
+    {
+        "url": "https://youtube.com/c/{}",
+        "domain": "youtube.com",
+        "err_text_pattern": "<title.*?>404\\sNot\\sFound.*?</title>",
+        "category": 6
+    }
+]

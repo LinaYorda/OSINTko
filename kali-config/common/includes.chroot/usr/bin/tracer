@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+cd /usr/share/tracer/tracer
+exec python3 tracer.py  "$@"

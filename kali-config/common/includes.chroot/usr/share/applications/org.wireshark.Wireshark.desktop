@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=wireshark
+Comment=Interactively dump and analyze network traffic
+Encoding=UTF-8
+Exec=sh -c "$(id -Gn | grep -q wireshark || echo pkexec) wireshark %f"
+Icon=kali-wireshark
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=09-sniffing-spoofing;004-respond;
+X-Kali-Package=wireshark
+MimeType=application/vnd.tcpdump.pcap;application/x-pcapng;application/x-snoop;application/x-iptrace;application/x-lanalyzer;application/x-nettl;application/x-radcom;application/x-etherpeek;application/x-visualnetworks;application/x-netinstobserver;application/x-5view;application/x-tektronix-rf5;application/x-micropross-mplog;application/x-apple-packetlogger;application/x-endace-erf;application/ipfix;application/x-ixia-vwr;
+StartupWMClass=wireshark

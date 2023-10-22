@@ -1,0 +1,24 @@
+# Live image
+# You always want these:
+kali-linux-core
+kali-desktop-live
+
+# Metapackages
+# You can customize the set of Kali metapackages (groups of tools) to install
+# For the complete list see: https://tools.kali.org/kali-metapackages
+#kali-linux-core
+#kali-tools-top10
+kali-linux-default
+#kali-linux-large
+#kali-linux-everything
+
+# Graphical desktop
+kali-desktop-mate
+# | NOTE: With Kali 1.x, the mate desktop requires other changes to the live config.
+# | See ~ https://web.archive.org/web/20150721230745/http://docs.kali.org/live-build/customize-the-kali-desktop-environment
+#if DISTRIBUTION moto
+mate-archive-keyring
+#endif
+
+# Kali applications
+#<package>

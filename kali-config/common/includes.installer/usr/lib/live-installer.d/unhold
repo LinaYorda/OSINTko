@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# Remove the "hold" mark on any package, in Kali we put kernel packages
+# on hold because upgrading them hurts more than it helps and because
+# we want to ensure they are not removed by a routine dist-upgrade.
+in-target sh -c 'apt-mark showhold | while read pkg; do apt-mark unhold $pkg; done'

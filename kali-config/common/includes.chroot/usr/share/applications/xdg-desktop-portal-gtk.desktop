@@ -1,0 +1,33 @@
+[Desktop Entry]
+Type=Application
+Name[cs]=Portál
+Name[da]=Portal
+Name[de]=Portal
+Name[en_GB]=Portal
+Name[es]=Portal
+Name[gl]=Portal
+Name[he]=שער
+Name[hi]=द्वार
+Name[hr]=Portal
+Name[hu]=Portál
+Name[id]=Portal
+Name[it]=Portale
+Name[ka]=პორტალი
+Name[lt]=Portalas
+Name[nl]=Portaal
+Name[oc]=Portal
+Name[pl]=Portal
+Name[pt]=Portal
+Name[pt_BR]=Portal
+Name[ru]=Портал
+Name[sk]=Portál
+Name[sv]=Portal
+Name[tr]=Portal
+Name[uk]=Портал
+Name[zh_CN]=门户
+Name[zh_TW]=入口
+Name=Portal
+# TRANSLATORS: Don't translate this text (this is icon name)
+Icon=applications-system-symbolic
+Exec=/usr/libexec/xdg-desktop-portal-gtk
+NoDisplay=true

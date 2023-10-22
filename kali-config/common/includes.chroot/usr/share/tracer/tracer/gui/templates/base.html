@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <!--
+        ___________
+        \__    ___/_______ _____     ____   ____ _______
+          |    |   \_  __ \\__  \  _/ ___\_/ __ \\_  __ \
+          |    |    |  | \/ / __ \_\  \___\  ___/ |  | \/
+          |____|    |__|   (____  / \___  >\___  >|__|
+                                \/      \/     \/
+             https://www.github.com/chr3st5an/tracer
+    -->
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta http-equiv="expires" content="43200"/>
+        <meta name="referrer" content="no-referrer"/>
+        <title>{% block title %}Tracer | Search{% endblock %}</title>
+        <meta name="application-name" content="Tracer"/>
+        <meta name="author" content="chr3st5an"/>
+        <meta name="description" content="Tracer allows you to check on which websites a username is currently taken."/>
+        <meta name="category" content="osint"/>
+        <meta name="keywords" content="tracer, tracer-project, osint, username-checker, username, python"/>
+        <meta name="target" content="all">
+        <meta property="og:site_name" content="Tracer"/>
+        <meta property="og:title" content="Username Checker - Tracer"/>
+        <meta property="og:url" content="{{ scheme }}://{{ host }}/"/>
+        <meta property="og:image" content="{{ scheme }}://{{ host }}/static/assets/tracer_social_preview.jpg"/>
+        <meta property="og:image:type" content="image/jpeg"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="627"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Discover on which website a username is taken"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta name="theme-color" content="#282a36"/>
+        <link rel="icon" href="/favicon.ico" type="image/ico"/>
+        <link rel="stylesheet" href="/static/css/main.css" type="text/css"/>
+        {%- block scripts %}{% endblock %}
+    </head>
+    <body>
+        <noscript>
+            <center>
+                <span style="color:#f8f8f2">JavaScript is required for this site!</span>
+            </center>
+        </noscript>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+        {% block footer %}
+        <div class="noselect" id="info">
+            <div id="wrapper">
+                <div class="info-box">
+                    <div>
+                        <h4>What is Tracer?</h4>
+                        <p>
+                            Tracer is a username checker, which<br/>
+                            means that it allows you to check on<br/>
+                            which website a username is currently taken.<br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div>
+                        <h4>Some results are wrong!</h4>
+                        <p>
+                            Yes, sometimes websites return unexpected<br/>
+                            responses which Tracer interprets wrong.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Created with <span style="color:#ff5555;transition:1s all ease;">&hearts;</span> by chr3st5an</p>
+                <script type="text/javascript">
+                    let heart = document.querySelector('#footer p span');
+                    let isRed = true;
+
+                    setInterval(() => {
+                        heart.style.color = isRed ? '#50fa7b' : '#ff5555';
+                        isRed = !isRed;
+                    }, 1000)
+                </script>
+            </div>
+        </div>
+        {% endblock %}
+    </body>
+</html>
