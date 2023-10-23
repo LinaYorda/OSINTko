@@ -16,7 +16,7 @@ The official Kali documentation states that you will need a bootable USB drive o
 
 # Download
 
-Download the ISO file from the Realise tab and install it on your preferred virtualization tool. I have tested it on UTMapp and VirtualBox. 
+Download the ISO file from my [my personal website](https://yordanova.info/kali-linux-osintko-amd64.iso) and install it on your preferred virtualization tool. I have tested it on UTMapp and VirtualBox. The image size is 3.9GB. 
 
 
 # Tools and Programs included
