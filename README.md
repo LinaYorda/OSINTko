@@ -113,10 +113,24 @@ Some of the Python scripts require sudo to read the output. The typical error th
 
 In the [blog post](https://www.kali.org/blog/python-externally-managed/) from 6th of July this year, Kali Linux distro developers announced that Python packages outside the package manager should be in the future insalled in a virtual environment. Though pip install still works, it wont be for too long. With the next Python3.12, Kali will officially retire it. 
 
-
 # Feedback
 
 If you have any feedback,suggestions or comments please reach out to me at schefflina@gmail.com
 
+# Disclaimer
 
+**Educational Purpose Only: This software is provided for educational purposes only. It is not intended for production use or any critical applications.**
 
+By using this software, you understand and agree that:
+
+- This software is for educational purposes and should not be used in any mission-critical or production environments.
+
+- The software may contain errors, bugs, or vulnerabilities, and should not be relied upon for any real-world applications.
+
+- You are solely responsible for any consequences, including but not limited to data loss, damage, or security breaches, that may occur as a result of using this software.
+
+- The authors and contributors of this software are not responsible for any damages or losses, direct or indirect, that may result from the use of this software.
+
+Please use this software responsibly and with the understanding that it is for educational purposes only. If you require a production-ready solution, it is recommended to seek professional software or services.
+
+**You use this software at your own risk.**
