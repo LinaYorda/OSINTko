@@ -111,7 +111,7 @@ Some of the Python scripts require sudo to read the output. The typical error th
 
 # A note on Python scripts: Kali is retiring pip install
 
-In the [blog post](https://www.kali.org/blog/python-externally-managed/) from 6th of July this year, Kali Linux distro developers announced that Python packages outside the package manager should be in the future insalled in a virtual environment. Though pip install still works, it wont be for too long. With the next Python3.12, Kali will officially retire it. 
+In the [blog post](https://www.kali.org/blog/python-externally-managed/) from 6th of July this year, Kali Linux distro developers announced that Python packages outside the package manager should be in the future installed in a virtual environment. Though pip install still works, it wont be for too long. With the next Python3.12, Kali will officially retire it. 
 
 # Feedback
 
