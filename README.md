@@ -47,6 +47,7 @@ Download the ISO file from my [my personal website](https://yordanova.info/kali-
 - [GitSint](https://github.com/N0rz3/GitSint)
 - [Instaloader](https://github.com/instaloader/instaloader)
 - [Osgint](https://github.com/hippiiee/osgint)
+- [Xquik](https://github.com/Xquik-dev/x-twitter-scraper) - Independent X (Twitter) data API for search, follower export, monitors, and MCP.
 
 ### Email
 
