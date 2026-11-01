@@ -1,0 +1,45 @@
+name: Test tools
+
+on:
+  push:
+    paths:
+      - 'testing/docker/**'
+      - '.github/workflows/test-tools.yml'
+  pull_request:
+    paths:
+      - 'testing/docker/**'
+      - '.github/workflows/test-tools.yml'
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}
+
+jobs:
+  test-tools:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runs-on: ubuntu-latest
+          - arch: arm64
+            runs-on: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build test image
+        run: docker build -f testing/docker/Dockerfile -t osintko-tools-test:${{ matrix.arch }} .
+
+      - name: Run tool tests
+        run: docker run --rm osintko-tools-test:${{ matrix.arch }} | tee test-tools-report-${{ matrix.arch }}.txt
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-tools-report-${{ matrix.arch }}
+          path: test-tools-report-${{ matrix.arch }}.txt
+
+      - name: Add to job summary
+        if: always()
+        run: cat test-tools-report-${{ matrix.arch }}.txt >> "$GITHUB_STEP_SUMMARY"
