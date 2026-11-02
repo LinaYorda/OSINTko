@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Instaloader
+Type=Application
+Categories=osint-social-media;
+Terminal=true
+Icon=/usr/share/instaloader/instaloader.png
+Exec=/usr/share/kali-menu/exec-in-shell "instaloader -h"
+Path=
+StartupNotify=false

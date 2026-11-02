@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Linkook
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "linkook -h"
+Path=
+StartupNotify=false

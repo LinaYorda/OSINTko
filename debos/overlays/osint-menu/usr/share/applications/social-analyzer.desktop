@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Social-Analyzer
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=/usr/share/social-analyzer/socialanalyzerlogo.png
+Exec=/usr/share/kali-menu/exec-in-shell "social-analyzer -h"
+Path=
+StartupNotify=false

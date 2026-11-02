@@ -1,0 +1,91 @@
+name: Build debos images
+
+on:
+  push:
+    paths:
+      - 'debos/**'
+      - '.github/workflows/build-debos.yml'
+  pull_request:
+    paths:
+      - 'debos/**'
+      - '.github/workflows/build-debos.yml'
+  workflow_dispatch: {}
+
+jobs:
+  build-amd64:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install debos
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends debos qemu-utils
+          sudo rm -rf /var/lib/apt/lists/*
+
+      - name: Build amd64 qcow2
+        run: |
+          mkdir -p images
+          sudo debos \
+            --artifactdir=images \
+            -t hostname:osintko \
+            -t imagename:osintko-amd64 \
+            -t username:osint \
+            -t password:osint \
+            debos/osintko-amd64.yaml
+
+      - name: Fix output ownership
+        run: sudo chown -R "$USER:$USER" images/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: osintko-amd64-qcow2
+          path: images/*.qcow2
+          if-no-files-found: error
+
+  build-arm64:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build arm64 builder image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: debos/Dockerfile.arm64
+          tags: osintko-arm64-builder:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Build arm64 qcow2
+        run: |
+          mkdir -p images
+          docker run --rm \
+            --privileged \
+            --net host \
+            --tmpfs /run \
+            --tmpfs /tmp \
+            --volume /dev:/dev \
+            --volume "$(pwd):/recipes" \
+            --workdir /recipes \
+            osintko-arm64-builder:latest \
+            debos \
+              --artifactdir=images \
+              -t hostname:osintko \
+              -t imagename:osintko-arm64 \
+              -t username:osint \
+              -t password:osint \
+              debos/osintko-arm64.yaml
+
+      - name: Fix output ownership
+        run: sudo chown -R "$USER:$USER" images/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: osintko-arm64-qcow2
+          path: images/*.qcow2
+          if-no-files-found: error

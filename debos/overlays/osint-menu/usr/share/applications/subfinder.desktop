@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Subfinder
+Type=Application
+Categories=01-07-osint-analysis;
+Terminal=true
+Icon=/usr/share/subfinder/subfinder.png
+Exec=/usr/share/kali-menu/exec-in-shell "subfinder -h"
+Path=
+StartupNotify=false

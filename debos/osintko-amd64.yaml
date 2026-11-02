@@ -1,0 +1,129 @@
+# debos recipe for OSINTko - Kali-rolling amd64
+# Produces a qcow2 disk image for QEMU-based hypervisors (UTM, virt-manager).
+
+{{ $hostname := or .hostname "osintko" }}
+{{ $imagename := .imagename }}
+{{ $password := or .password "osint" }}
+{{ $size := or .size "20GB" }}
+{{ $username := or .username "osint" }}
+
+architecture: amd64
+
+actions:
+  - action: debootstrap
+    mirror: http://http.kali.org/kali
+    suite: kali-rolling
+    components: [ main, contrib, non-free, non-free-firmware ]
+    keyring-file: files/kali-archive-keyring.gpg
+
+  - description: "Trust the Kali archive signing key for subsequent apt actions"
+    action: run
+    chroot: false
+    command: cp $RECIPEDIR/files/kali-archive-keyring.gpg $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+
+  - description: "Install usr-is-merged (cf. debos #361 and #362)"
+    action: apt
+    packages: [ usr-is-merged ]
+
+  - description: "Set hostname to {{ $hostname }}"
+    action: run
+    chroot: false
+    command: echo {{ $hostname }} > $ROOTDIR/etc/hostname
+
+  - description: "Install OSINTko packages"
+    action: apt
+    recommends: true
+    packages:
+      - kali-linux-core
+      - kali-desktop-xfce
+      - recon-ng
+      - spiderfoot
+      - sherlock
+      - maltego
+      - theharvester
+      - nmap
+      - wireshark
+      - cherrytree
+      - eyewitness
+      - tcpdump
+      - joplin
+      - amass
+      - finalrecon
+      - wpscan
+      - whatweb
+      - marble
+      - foxtrotgps
+      - gnome-maps
+      - menulibre
+      - yt-dlp
+      - vim
+      - epiphany-browser
+      - tor
+      - torbrowser-launcher
+      - firefox-esr
+      - git
+      - curl
+      - python3
+      - python3-pip
+      - build-essential
+      - cargo
+      - golang-go
+
+  - description: "Remove bloat pulled in via Recommends"
+    action: run
+    chroot: true
+    script: scripts/remove-bloat.sh
+
+  - description: "Install vendored OSINT tools"
+    action: run
+    chroot: true
+    script: scripts/install-vendored-tools.sh
+
+  - description: "Install menu launchers and icons for vendored OSINT tools"
+    action: overlay
+    source: overlays/osint-menu
+
+  - description: "Create user {{ $username }}"
+    action: run
+    chroot: true
+    script: scripts/create-user.sh {{ $username }} "{{ $password }}"
+
+  - description: "Setup the disk image (msdos + BIOS boot)"
+    action: image-partition
+    imagename: {{ $imagename }}.raw
+    imagesize: {{ $size }}
+    partitiontype: msdos
+    partitions:
+      - name: root
+        fs: ext4
+        start: 2048s
+        end: 100%
+        flags: [ boot ]
+    mountpoints:
+      - mountpoint: /
+        partition: root
+        options: [ errors=remount-ro ]
+
+  - action: filesystem-deploy
+    setup-kernel-cmdline: false
+
+  - description: "Install the kernel & bootloader"
+    action: apt
+    recommends: true
+    packages: [ grub-pc, linux-image-amd64 ]
+
+  - description: "Setup GRUB"
+    action: run
+    chroot: true
+    command: grub-install "$IMAGE" && update-grub
+
+  - description: "Final cleanup"
+    action: run
+    chroot: true
+    script: scripts/cleanup.sh
+
+  - description: "Export to qcow2 image for UTM"
+    label: "export-qcow2"
+    action: run
+    postprocess: true
+    script: scripts/export-qcow2.sh {{ $imagename }}
