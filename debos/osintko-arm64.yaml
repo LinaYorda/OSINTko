@@ -19,7 +19,7 @@ actions:
   - description: "Trust the Kali archive signing key for subsequent apt actions"
     action: run
     chroot: false
-    command: cp $RECIPEDIR/files/kali-archive-keyring.gpg $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+    command: rm -f $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg && cp $RECIPEDIR/files/kali-archive-keyring.gpg $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
 
   - description: "Install usr-is-merged (cf. debos #361 and #362)"
     action: apt
