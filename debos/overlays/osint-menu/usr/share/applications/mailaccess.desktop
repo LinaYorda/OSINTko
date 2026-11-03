@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=MailAccess
 Type=Application
-Categories=osint-email;
+Categories=kali-reconnaissance;
 Terminal=true
 Icon=/usr/share/mailaccess/mailaccess.svg
 Exec=/usr/share/kali-menu/exec-in-shell "mailaccess -h"

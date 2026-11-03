@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Near
 Type=Application
-Categories=01-07-osint-analysis;
+Categories=kali-reconnaissance;
 Terminal=true
 Icon=/usr/share/near/near.png
 Exec=/usr/share/kali-menu/exec-in-shell "near -h"

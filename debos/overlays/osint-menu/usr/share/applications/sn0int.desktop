@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=sn0int
 Type=Application
-Categories=01-07-osint-analysis;
+Categories=kali-reconnaissance;
 Terminal=true
 Icon=utilities-terminal
 Exec=/usr/share/kali-menu/exec-in-shell "sn0int -h"
