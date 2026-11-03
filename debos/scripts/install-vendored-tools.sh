@@ -15,6 +15,20 @@ pip install --upgrade pip --break-system-packages >/dev/null 2>&1
 
 mkdir -p /opt/new-tools
 
+# Appends a FAIL/WARN line plus the tail of its log to $REPORT. Without this,
+# the actual pip/cargo error only ever lands in an ephemeral /tmp file inside
+# the CI container - gone the moment the job ends, leaving only a one-line
+# summary with no way to diagnose what actually went wrong.
+log_outcome() {
+	local status="$1" msg="$2" log="$3"
+	echo "$status $msg" >>"$REPORT"
+	if [ -f "$log" ]; then
+		echo "  --- tail of $log ---" >>"$REPORT"
+		tail -n 20 "$log" >>"$REPORT"
+		echo "  --- end log ---" >>"$REPORT"
+	fi
+}
+
 # Best-effort guess at a tool's CLI entry file, for repos with no
 # setup.py/pyproject.toml (just loose scripts). Picks the first obvious
 # match, or the single top-level .py file if there's exactly one.
@@ -48,14 +62,14 @@ install_tool() {
 	fi
 
 	if [ -z "$repo" ]; then
-		echo "INSTALL_FAIL $name (no pypi package, no repo url given, see $log)" >>"$REPORT"
+		log_outcome "INSTALL_FAIL" "$name (no pypi package, no repo url given)" "$log"
 		return
 	fi
 
 	local dir="/opt/new-tools/$name"
 	rm -rf "$dir"
 	if ! git clone --depth 1 "$repo" "$dir" >"$log" 2>&1; then
-		echo "INSTALL_FAIL $name (git clone failed, see $log)" >>"$REPORT"
+		log_outcome "INSTALL_FAIL" "$name (git clone failed)" "$log"
 		return
 	fi
 
@@ -64,13 +78,13 @@ install_tool() {
 			echo "INSTALL_OK   $name (pip install from source: $repo)" >>"$REPORT"
 			return
 		fi
-		echo "INSTALL_FAIL $name (pip install from source failed, see $log)" >>"$REPORT"
+		log_outcome "INSTALL_FAIL" "$name (pip install from source failed)" "$log"
 		return
 	fi
 
 	if [ -f "$dir/requirements.txt" ]; then
 		$PIP -r "$dir/requirements.txt" >>"$log" 2>&1 \
-			|| echo "INSTALL_WARN $name (requirements.txt install had errors, see $log)" >>"$REPORT"
+			|| log_outcome "INSTALL_WARN" "$name (requirements.txt install had errors)" "$log"
 	fi
 
 	local entry
@@ -83,7 +97,7 @@ install_tool() {
 		chmod +x "/usr/local/bin/$name"
 		echo "INSTALL_OK   $name (git clone: $repo, entry: $entry)" >>"$REPORT"
 	else
-		echo "INSTALL_FAIL $name (cloned $repo but no entry point found, see $log)" >>"$REPORT"
+		log_outcome "INSTALL_FAIL" "$name (cloned $repo but no entry point found)" "$log"
 	fi
 }
 
@@ -100,9 +114,11 @@ install_tool near            ""              "https://github.com/SamueleAmato/Ne
 # Near ships no requirements.txt at all - this is a best-effort guess at
 # its real dependency, inferred from the ModuleNotFoundError, not a
 # declared requirement. Same undeclared-dependency pattern seen before.
-$PIP textual >/tmp/install_near_textual.log 2>&1 \
-	&& echo "INSTALL_OK   near (extra guessed dep: textual)" >>"$REPORT" \
-	|| echo "INSTALL_FAIL near (guessed dep textual failed, see /tmp/install_near_textual.log)" >>"$REPORT"
+if $PIP textual >/tmp/install_near_textual.log 2>&1; then
+	echo "INSTALL_OK   near (extra guessed dep: textual)" >>"$REPORT"
+else
+	log_outcome "INSTALL_FAIL" "near (guessed dep textual failed)" "/tmp/install_near_textual.log"
+fi
 install_tool zehef           ""              "https://github.com/N0rz3/Zehef"
 install_tool mailaccess      "mailaccess"    "https://github.com/KatrielMoses/MailAccess"
 install_tool linkook         "linkook"       "https://github.com/JackJuly/linkook"
@@ -121,14 +137,14 @@ if cargo install --locked sn0int >/tmp/install_sn0int.log 2>&1; then
 	cp /root/.cargo/bin/sn0int /usr/local/bin/sn0int
 	echo "INSTALL_OK   sn0int (cargo)" >>"$REPORT"
 else
-	echo "INSTALL_FAIL sn0int (cargo install failed, see /tmp/install_sn0int.log)" >>"$REPORT"
+	log_outcome "INSTALL_FAIL" "sn0int (cargo install failed)" "/tmp/install_sn0int.log"
 fi
 
 if go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest >/tmp/install_subfinder.log 2>&1; then
 	cp /root/go/bin/subfinder /usr/local/bin/subfinder
 	echo "INSTALL_OK   subfinder (go install)" >>"$REPORT"
 else
-	echo "INSTALL_FAIL subfinder (go install failed, see /tmp/install_subfinder.log)" >>"$REPORT"
+	log_outcome "INSTALL_FAIL" "subfinder (go install failed)" "/tmp/install_subfinder.log"
 fi
 
 # cargo/golang-go are only needed to build sn0int/subfinder above - end

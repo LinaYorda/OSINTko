@@ -76,7 +76,15 @@ actions:
       - curl
       - python3
       - python3-pip
+      - python3-dev
       - build-essential
+      - pkg-config
+      - zlib1g-dev
+      - libjpeg-dev
+      - libfreetype-dev
+      - libsodium-dev
+      - libseccomp-dev
+      - libsqlite3-dev
       - cargo
       - golang-go
 
