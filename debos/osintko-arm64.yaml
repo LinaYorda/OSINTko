@@ -143,10 +143,30 @@ actions:
     chroot: true
     command: grub-install --target=arm64-efi --efi-directory=/boot/efi --no-nvram --removable && update-grub
 
+  - description: "DEBUG: verify GRUB modules and EFI binary landed on disk"
+    action: run
+    chroot: true
+    command: |
+      echo "--- /boot/grub/arm64-efi ---"
+      ls -la /boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      echo "--- /boot/efi/EFI/BOOT ---"
+      ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+      echo "--- /boot/grub/grub.cfg ---"
+      cat /boot/grub/grub.cfg || echo "MISSING: /boot/grub/grub.cfg"
+
   - description: "Final cleanup"
     action: run
     chroot: true
     script: scripts/cleanup.sh
+
+  - description: "DEBUG: verify GRUB modules survived cleanup"
+    action: run
+    chroot: true
+    command: |
+      echo "--- /boot/grub/arm64-efi (post-cleanup) ---"
+      ls -la /boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      echo "--- /boot/efi/EFI/BOOT (post-cleanup) ---"
+      ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
 
   - description: "Export to qcow2 image for UTM"
     label: "export-qcow2"
