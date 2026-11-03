@@ -11,7 +11,7 @@ architecture: arm64
 
 actions:
   - action: debootstrap
-    mirror: http://http.kali.org/kali
+    mirror: http://kali.download/kali
     suite: kali-rolling
     components: [ main, contrib, non-free, non-free-firmware ]
     keyring-file: files/kali-archive-keyring.gpg
