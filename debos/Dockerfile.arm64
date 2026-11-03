@@ -4,6 +4,13 @@ FROM debian:trixie-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# ca-certificates first: Kali's mirror redirector sends debootstrap to
+# HTTPS mirrors, which fail cert verification without it.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        debos \
