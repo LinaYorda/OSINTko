@@ -41,6 +41,7 @@ actions:
       - kali-linux-core
       - kali-desktop-xfce
       - xserver-xorg-core
+      - xserver-xorg-input-all
       - recon-ng
       - spiderfoot
       - sherlock
