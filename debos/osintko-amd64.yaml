@@ -35,6 +35,7 @@ actions:
     packages:
       - kali-linux-core
       - kali-desktop-xfce
+      - xserver-xorg-core
       - recon-ng
       - spiderfoot
       - sherlock

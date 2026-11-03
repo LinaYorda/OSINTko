@@ -44,8 +44,8 @@ jobs:
             --artifactdir=images \
             -t hostname:osintko \
             -t imagename:osintko-amd64 \
-            -t username:osint \
-            -t password:osint \
+            -t username:osintko \
+            -t password:osintko \
             debos/osintko-amd64.yaml
 
       - name: Fix output ownership
@@ -105,8 +105,8 @@ jobs:
               --artifactdir=images \
               -t hostname:osintko \
               -t imagename:osintko-arm64 \
-              -t username:osint \
-              -t password:osint \
+              -t username:osintko \
+              -t password:osintko \
               debos/osintko-arm64.yaml
 
       - name: Fix output ownership
