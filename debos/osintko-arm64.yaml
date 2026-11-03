@@ -168,6 +168,27 @@ actions:
       echo "--- /boot/efi/EFI/BOOT (post-cleanup) ---"
       ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
 
+  - description: "DEBUG: verify GRUB survived debos unmount/finalize, in the actual raw image bytes"
+    action: run
+    postprocess: true
+    command: |
+      set -x
+      cd "$ARTIFACTDIR"
+      loopdev=$(losetup --show -fP "{{ $imagename }}.raw")
+      partprobe "$loopdev" || true
+      sleep 1
+      mkdir -p /tmp/debug-raw
+      mount "${loopdev}p2" /tmp/debug-raw
+      echo "--- /boot/grub/arm64-efi (from final raw image, post-unmount) ---"
+      ls -la /tmp/debug-raw/boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      mkdir -p /tmp/debug-raw/boot/efi
+      mount "${loopdev}p1" /tmp/debug-raw/boot/efi
+      echo "--- /boot/efi/EFI/BOOT (from final raw image, post-unmount) ---"
+      ls -la /tmp/debug-raw/boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+      umount /tmp/debug-raw/boot/efi
+      umount /tmp/debug-raw
+      losetup -d "$loopdev"
+
   - description: "Export to qcow2 image for UTM"
     label: "export-qcow2"
     action: run
