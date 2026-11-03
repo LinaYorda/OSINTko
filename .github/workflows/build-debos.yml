@@ -39,6 +39,8 @@ jobs:
         run: |
           mkdir -p images
           sudo debos \
+            --memory=4G \
+            --scratchsize=40G \
             --artifactdir=images \
             -t hostname:osintko \
             -t imagename:osintko-amd64 \
@@ -98,6 +100,8 @@ jobs:
             --workdir /recipes \
             osintko-arm64-builder:latest \
             debos \
+              --memory=4G \
+              --scratchsize=8G \
               --artifactdir=images \
               -t hostname:osintko \
               -t imagename:osintko-arm64 \
