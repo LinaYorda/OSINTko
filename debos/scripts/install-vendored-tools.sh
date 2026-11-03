@@ -131,5 +131,12 @@ else
 	echo "INSTALL_FAIL subfinder (go install failed, see /tmp/install_subfinder.log)" >>"$REPORT"
 fi
 
+# cargo/golang-go are only needed to build sn0int/subfinder above - end
+# users don't need a Rust/Go toolchain on an OSINT distro. Drop them and
+# their caches now that the binaries are in /usr/local/bin.
+apt-get -y purge cargo golang-go
+apt-get -y autoremove
+rm -rf /root/.cargo /root/go
+
 cat "$REPORT"
 exit 0
