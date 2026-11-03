@@ -35,6 +35,11 @@ actions:
     chroot: false
     command: echo {{ $hostname }} > $ROOTDIR/etc/hostname
 
+  - description: "Add hostname to /etc/hosts (avoids DNS timeout on local hostname lookups)"
+    action: run
+    chroot: true
+    script: scripts/configure-etc-hosts.sh
+
   - description: "Install OSINTko packages"
     action: apt
     packages:
@@ -42,6 +47,8 @@ actions:
       - kali-desktop-xfce
       - xserver-xorg-core
       - xserver-xorg-input-all
+      - spice-vdagent
+      - qemu-guest-agent
       - recon-ng
       - spiderfoot
       - sherlock
@@ -84,6 +91,10 @@ actions:
   - description: "Install menu launchers and icons for vendored OSINT tools"
     action: overlay
     source: overlays/osint-menu
+
+  - description: "Install OSINTko wallpaper and default desktop settings"
+    action: overlay
+    source: overlays/branding
 
   - description: "Create user {{ $username }}"
     action: run
