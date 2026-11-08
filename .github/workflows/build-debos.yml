@@ -56,6 +56,7 @@ jobs:
           name: osintko-amd64-qcow2
           path: images/*.qcow2
           if-no-files-found: error
+          retention-days: 3
 
   build-arm64:
     runs-on: ubuntu-24.04-arm
@@ -85,7 +86,7 @@ jobs:
           tags: osintko-arm64-builder:latest
           load: true
           cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-to: type=gha,mode=min
 
       - name: DEBUG - runner disk space before build
         run: df -h
@@ -153,9 +154,11 @@ jobs:
           name: osintko-arm64-qcow2-boot-log
           path: qemu-boot-test.log
           if-no-files-found: warn
+          retention-days: 3
 
       - uses: actions/upload-artifact@v4
         with:
           name: osintko-arm64-qcow2
           path: images/*.qcow2
           if-no-files-found: error
+          retention-days: 3
