@@ -45,6 +45,7 @@ actions:
     packages:
       - kali-linux-core
       - kali-desktop-xfce
+      - kali-menu
       - xserver-xorg-core
       - xserver-xorg-input-all
       - spice-vdagent
@@ -138,6 +139,11 @@ actions:
     action: apt
     packages: [ grub-efi-arm64, linux-image-arm64 ]
 
+  - description: "Trim initramfs to VM-only storage drivers (shrinks initrd, speeds up GRUB's disk read)"
+    action: run
+    chroot: true
+    script: scripts/configure-initramfs.sh
+
   - description: "Setup GRUB for ARM64 UEFI (removable/fallback EFI path)"
     action: run
     chroot: true
@@ -167,6 +173,11 @@ actions:
       ls -la /boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
       echo "--- /boot/efi/EFI/BOOT (post-cleanup) ---"
       ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+
+  - description: "Zero free space so the qcow2 export can skip it"
+    action: run
+    chroot: true
+    script: scripts/zero-free-space.sh
 
   - description: "DEBUG: verify GRUB survived debos unmount/finalize, in the actual raw image bytes"
     action: run

@@ -45,6 +45,7 @@ actions:
     packages:
       - kali-linux-core
       - kali-desktop-xfce
+      - kali-menu
       - xserver-xorg-core
       - xserver-xorg-input-all
       - spice-vdagent
@@ -134,6 +135,11 @@ actions:
     action: apt
     packages: [ grub-pc, linux-image-amd64 ]
 
+  - description: "Trim initramfs to VM-only storage drivers (shrinks initrd, speeds up GRUB's disk read)"
+    action: run
+    chroot: true
+    script: scripts/configure-initramfs.sh
+
   - description: "Setup GRUB"
     action: run
     chroot: true
@@ -143,6 +149,11 @@ actions:
     action: run
     chroot: true
     script: scripts/cleanup.sh
+
+  - description: "Zero free space so the qcow2 export can skip it"
+    action: run
+    chroot: true
+    script: scripts/zero-free-space.sh
 
   - description: "Export to qcow2 image for UTM"
     label: "export-qcow2"
