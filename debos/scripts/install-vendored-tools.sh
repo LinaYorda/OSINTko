@@ -10,7 +10,12 @@ REPORT=/opt/install-report.txt
 # Kali retired unmanaged `pip install` (PEP 668). The entry-point scripts
 # pip generates point at /usr/bin/python3, so packages must land in system
 # site-packages to be importable.
-PIP="pip install --break-system-packages"
+# --ignore-installed: several tools' dep chains want to upgrade a package
+# that's already present via apt (packaging, networkx, python-dotenv, yarl,
+# ...). Those apt-installed copies have no pip RECORD file, so pip refuses
+# to uninstall/upgrade them and aborts the whole install. This is a
+# single-use build chroot, so shadowing them with pip's copy is safe.
+PIP="pip install --break-system-packages --ignore-installed"
 pip install --upgrade pip --break-system-packages >/dev/null 2>&1
 
 mkdir -p /opt/new-tools
@@ -72,6 +77,11 @@ install_tool() {
 		log_outcome "INSTALL_FAIL" "$name (git clone failed)" "$log"
 		return
 	fi
+	# Tools without a pypi package run in place via a wrapper that cd's
+	# into $dir (set below), as the desktop user, not root. Several write
+	# relative paths like logs/ or output/ at runtime, which fails against
+	# root-owned files from this clone (e.g. blackbird's os.makedirs("logs/")).
+	chmod -R a+rwX "$dir"
 
 	if [ -f "$dir/pyproject.toml" ] || [ -f "$dir/setup.py" ]; then
 		if $PIP "$dir" >>"$log" 2>&1; then
@@ -114,17 +124,19 @@ install_tool near            ""              "https://github.com/SamueleAmato/Ne
 # Near ships no requirements.txt at all - this is a best-effort guess at
 # its real dependency, inferred from the ModuleNotFoundError, not a
 # declared requirement. Same undeclared-dependency pattern seen before.
-if $PIP textual >/tmp/install_near_textual.log 2>&1; then
-	echo "INSTALL_OK   near (extra guessed dep: textual)" >>"$REPORT"
+# Pinned below 6.0.0: Near's code reads Label.renderable, which Textual
+# 6.0.0 renamed to .content (confirmed in textual's own changelog) -
+# unpinned pip grabs latest and near.py crashes with AttributeError on
+# every list selection.
+if $PIP "textual==5.0.0" >/tmp/install_near_textual.log 2>&1; then
+	echo "INSTALL_OK   near (extra guessed dep: textual==5.0.0)" >>"$REPORT"
 else
 	log_outcome "INSTALL_FAIL" "near (guessed dep textual failed)" "/tmp/install_near_textual.log"
 fi
 install_tool zehef           ""              "https://github.com/N0rz3/Zehef"
 install_tool mailaccess      "mailaccess"    "https://github.com/KatrielMoses/MailAccess"
 install_tool linkook         "linkook"       "https://github.com/JackJuly/linkook"
-# ghunt's dep chain tries to upgrade `packaging`, which was apt-installed
-# (python3-packaging) and has no pip RECORD file, so pip can't uninstall it.
-install_tool ghunt           "ghunt"         "https://github.com/mxrch/GHunt" "--ignore-installed packaging"
+install_tool ghunt           "ghunt"         "https://github.com/mxrch/GHunt"
 
 # owlculus is a full backend+frontend+Caddy docker-compose platform. Needs
 # a separate `docker-compose up` based check, done manually, not here.

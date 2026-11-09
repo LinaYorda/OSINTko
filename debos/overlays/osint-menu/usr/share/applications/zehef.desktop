@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Zehef
 Type=Application
-Categories=kali-reconnaissance;
+Categories=osint-email;
 Terminal=true
 Icon=/usr/share/zehef/zehef.png
 Exec=/usr/share/kali-menu/exec-in-shell "zehef -h"

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=GHunt
 Type=Application
-Categories=kali-reconnaissance;
+Categories=osint-email;
 Terminal=true
 Icon=utilities-terminal
 Exec=/usr/share/kali-menu/exec-in-shell "ghunt -h"

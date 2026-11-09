@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Blackbird
 Type=Application
-Categories=kali-reconnaissance;
+Categories=osint-username;
 Terminal=true
 Icon=/usr/share/blackbird/blackbird.png
 Exec=/usr/share/kali-menu/exec-in-shell blackbird -h

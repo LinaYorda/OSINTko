@@ -41,35 +41,37 @@ Download the ISO file from my [my personal website](https://yordanova.info/kali-
 
 ## OSINT
 
-### Social Media
+### Username
 
-- [FacebookChecker](https://github.com/yasserjanah/FacebookChecker/releases)
-- [GitSint](https://github.com/N0rz3/GitSint)
-- [Instaloader](https://github.com/instaloader/instaloader)
+- [Sherlock](https://github.com/sherlock-project/sherlock)
+- [Blackbird](https://github.com/antoniaci/blackbird)
+- [Maigret](https://github.com/soxoj/maigret)
+- [Linkook](https://github.com/JackJuly/linkook)
 - [Osgint](https://github.com/hippiiee/osgint)
+- [Socialscan](https://github.com/iojw/socialscan)
 
 ### Email
 
-- [Eyes](https://github.com/N0rz3/Eyes)
-- [H8mail](https://github.com/khast3x/h8mail)
 - [Holehe](https://github.com/megadose/holehe)
-- [Unfoga](https://github.com/robertswin/Infoga)
+- [Mailaccess](https://github.com/KatrielMoses/MailAccess)
+- [Zehef](https://github.com/N0rz3/Zehef)
+- [GHunt](https://github.com/mxrch/GHunt)
+
+### Social Media
+
+- [Aliens Eye](https://github.com/arxhr007/Aliens_eye)
+- [Instaloader](https://github.com/instaloader/instaloader)
+- [Social-Analyzer](https://github.com/qeeqbox/social-analyzer)
 
 ### Phone number
 
-- [Findigo](https://github.com/De-Technocrats/findigo)
-- [No-infoga](https://github.com/akashblackhat/no-infoga.py)
-- [PhoneNumber-OSINT](https://github.com/SpiderAnongreyhat/PhoneNumber-OSINT)
+- [Near](https://github.com/SamueleAmato/Near)
+- [X-osint](https://github.com/TermuxHackz/X-osint)
 
-### Username
+### General
 
-- [Aliens Eye](https://github.com/arxhr007/Aliens_eye)
-- [Blackbird](https://github.com/p1ngul1n0/blackbird)
-- [Lawliet](https://github.com/RedKatz/Lawliet)
-- [Sherlock](https://github.com/sherlock-project/sherlock)
-- [Social-Analyzer](https://github.com/qeeqbox/social-analyzer)
-- [Socialscan](https://github.com/iojw/socialscan)
-- [Tracer](https://github.com/chr3st5an/tracer)
+- [sn0int](https://github.com/kpcyrd/sn0int)
+- [Subfinder](https://github.com/projectdiscovery/subfinder)
 
 
 ## Recon
