@@ -3,37 +3,30 @@
 #
 # A static xfconf XML can't do this reliably: the real property path is
 # /backdrop/screen0/monitor<NAME>/workspace<N>/last-image, where <NAME> is
-# whatever the virtual display driver reports at runtime (varies by VM/host),
-# not a predictable "monitor0". It also has to run after login, not at build
-# time, since kali-desktop-xfce seeds its own per-user xfconf defaults via
-# /etc/skel, which would otherwise take priority over anything set globally.
+# whatever the display driver reports at runtime (e.g. "Virtual-1" under
+# UTM/QEMU), not a predictable "monitor0" - confirmed via `xrandr --query`
+# on a live image, where xfdesktop never registered monitor0 at all; it was
+# only ever this script's own fallback guess, which xfdesktop never read.
+# Deriving the name directly from xrandr is deterministic and doesn't
+# depend on racing xfdesktop's own (possibly nonexistent) property init.
+# This also has to run after login, not at build time, since
+# kali-desktop-xfce seeds its own per-user xfconf defaults via /etc/skel,
+# which would otherwise take priority over anything set globally.
 set -eu
 
 WALLPAPER=/usr/share/backgrounds/osintko-images/kali_osintko_16x9.png
 CHANNEL=xfce4-desktop
 
-# xfdesktop populates its own monitor/workspace property tree on first
-# start, which can race this autostart script - retry briefly rather than
-# silently doing nothing if the tree isn't there yet.
-props=""
-i=0
-while [ "$i" -lt 10 ]; do
-	props=$(xfconf-query --channel "$CHANNEL" --property /backdrop --list 2>/dev/null \
-		| grep -E '/workspace[0-9]+/last-image$' || true)
-	[ -n "$props" ] && break
-	i=$((i + 1))
-	sleep 1
-done
+monitors=$(xrandr --query 2>/dev/null | awk '/ connected/ {print $1}')
+[ -z "$monitors" ] && monitors="monitor0"
 
-# Nothing registered yet even after retrying (e.g. xfdesktop never ran) -
-# fall back to the one property xfdesktop always honors on a fresh config.
-: "${props:=/backdrop/screen0/monitor0/workspace0/last-image}"
-
-echo "$props" | while read -r prop; do
-	[ -z "$prop" ] && continue
-	xfconf-query --channel "$CHANNEL" --property "$prop" --create \
-		--type string --set "$WALLPAPER"
-	style_prop=$(dirname "$prop")/image-style
-	xfconf-query --channel "$CHANNEL" --property "$style_prop" --create \
-		--type int --set 5 2>/dev/null || true
+for monitor in $monitors; do
+	for workspace in 0 1 2 3; do
+		prop="/backdrop/screen0/monitor${monitor}/workspace${workspace}/last-image"
+		xfconf-query --channel "$CHANNEL" --property "$prop" --create \
+			--type string --set "$WALLPAPER"
+		style_prop="/backdrop/screen0/monitor${monitor}/workspace${workspace}/image-style"
+		xfconf-query --channel "$CHANNEL" --property "$style_prop" --create \
+			--type int --set 5
+	done
 done
