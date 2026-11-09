@@ -42,6 +42,7 @@ actions:
 
   - description: "Install OSINTko packages"
     action: apt
+    recommends: true
     packages:
       - kali-linux-core
       - kali-desktop-xfce
