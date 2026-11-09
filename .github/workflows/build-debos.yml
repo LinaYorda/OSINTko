@@ -133,7 +133,7 @@ jobs:
           # from the failure screenshots, for a fair comparison.
           timeout 120 qemu-system-aarch64 \
             -M virt -cpu max -m 2048 \
-            -nographic -serial stdio \
+            -nographic \
             -drive if=pflash,format=raw,readonly=on,file=/usr/share/AAVMF/AAVMF_CODE.fd \
             -drive if=pflash,format=raw,file=vars.fd \
             -drive file=images/osintko-arm64.qcow2,format=qcow2,if=none,id=hd0 \
