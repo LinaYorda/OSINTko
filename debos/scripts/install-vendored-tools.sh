@@ -134,6 +134,36 @@ else
 	log_outcome "INSTALL_FAIL" "near (guessed dep textual failed)" "/tmp/install_near_textual.log"
 fi
 install_tool zehef           ""              "https://github.com/N0rz3/Zehef"
+# zehef's ~15 account-check modules all do r.json()['status'] with zero
+# error handling, including its own Requests.py fallback (a bodyless
+# httpx.Response(status_code=500) on transport errors - .json() on that
+# raises too). Any single blocked/rate-limited/non-JSON response crashes
+# the entire run. Patch httpx.Response.json globally at the one place
+# zehef imports httpx, instead of touching all ~15 modules individually.
+if [ -f /opt/new-tools/zehef/lib/Requests.py ]; then
+	python3 - <<-'PATCH'
+		path = "/opt/new-tools/zehef/lib/Requests.py"
+		src = open(path).read()
+		old = "import httpx\nimport requests\n"
+		patch = (
+		    "import httpx\n"
+		    "import requests\n"
+		    "\n"
+		    "_original_response_json = httpx.Response.json\n"
+		    "class _SafeDict(dict):\n"
+		    "    def __missing__(self, key):\n"
+		    "        return None\n"
+		    "def _safe_response_json(self, *args, **kwargs):\n"
+		    "    try:\n"
+		    "        return _original_response_json(self, *args, **kwargs)\n"
+		    "    except Exception:\n"
+		    "        return _SafeDict()\n"
+		    "httpx.Response.json = _safe_response_json\n"
+		)
+		if old in src and "_SafeDict" not in src:
+		    open(path, "w").write(src.replace(old, patch, 1))
+	PATCH
+fi
 install_tool mailaccess      "mailaccess"    "https://github.com/KatrielMoses/MailAccess"
 install_tool linkook         "linkook"       "https://github.com/JackJuly/linkook"
 install_tool ghunt           "ghunt"         "https://github.com/mxrch/GHunt"
