@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=TeXdoctk
-Exec=texdoctk
-Type=Application
-Terminal=false
-Comment=Display TeX related documentation
-Categories=Settings;

@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-cd /usr/share/domain_analyzer
-exec python3 domain_analyzer.py  "$@"

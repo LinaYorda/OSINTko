@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-cd /usr/share/Video-Downloader
-exec ./video-downloader  "$@"

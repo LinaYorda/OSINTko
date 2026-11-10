@@ -1,4 +1,0 @@
-
-[tests]
-pytest
-pytest-cov

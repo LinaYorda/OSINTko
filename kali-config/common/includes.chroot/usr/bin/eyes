@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-cd /usr/share/Eyes
-exec python3 eyes.py  "$@"

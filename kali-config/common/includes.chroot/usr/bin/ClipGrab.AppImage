@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-cd /usr/share/ClipGrab
-exec ./ClipGrab.AppImage "$@"

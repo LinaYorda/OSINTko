@@ -1,3 +1,0 @@
-# loads the simple-cdd-profiles udeb to which asks for which profiles to use,
-# load the debconf preseeding and queue packages for installation.
-d-i preseed/early_command string anna-install simple-cdd-profiles
