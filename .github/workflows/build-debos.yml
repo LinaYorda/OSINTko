@@ -2,6 +2,8 @@ name: Build debos images
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'debos/**'
       - '.github/workflows/build-debos.yml'
