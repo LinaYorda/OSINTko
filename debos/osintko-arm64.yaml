@@ -68,6 +68,7 @@ actions:
       - marble
       - gnome-maps
       - yt-dlp
+      - youtubedl-gui
       - vim
       - epiphany-browser
       - tor
@@ -101,6 +102,11 @@ actions:
   - description: "Install menu launchers and icons for vendored OSINT tools"
     action: overlay
     source: overlays/osint-menu
+
+  - description: "Hold kali-menu - apt upgrading it would silently overwrite our custom kali-applications.menu (not a tracked conffile)"
+    action: run
+    chroot: true
+    command: apt-mark hold kali-menu
 
   - description: "Install OSINTko wallpaper and default desktop settings"
     action: overlay

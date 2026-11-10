@@ -105,6 +105,9 @@
       <And>
         <Category>video-downloaders</Category>
       </And>
+      <And>
+        <Filename>youtubedl-gui.desktop</Filename>
+      </And>
     </Include>
   </Menu>
 

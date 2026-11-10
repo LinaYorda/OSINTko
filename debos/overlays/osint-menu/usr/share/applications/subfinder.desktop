@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Subfinder
 Type=Application
-Categories=osint;
+Categories=frameworks;
 Terminal=true
 Icon=/usr/share/subfinder/subfinder.png
 Exec=/usr/share/kali-menu/exec-in-shell "subfinder -h"
