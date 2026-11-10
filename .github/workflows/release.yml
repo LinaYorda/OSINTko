@@ -1,0 +1,42 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-debos.yml
+
+  create-release:
+    needs: build
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: osintko-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Keep only the checksums - the images themselves exceed GitHub's 2GB release asset limit
+        run: |
+          find artifacts -type f ! -name '*.sha256' -delete
+          echo "Attaching to release:"
+          ls -la artifacts
+
+      - uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: artifacts/*.sha256
+          generate_release_notes: true
+          body: |
+            Built images for this release are hosted at https://yordanova.info - too large for GitHub's 2GB release asset limit, so only the SHA256 checksums are attached here. Verify your download:
+
+            ```bash
+            shasum -a 256 -c kali-linux-osintko-amd64.qcow2.sha256
+            ```

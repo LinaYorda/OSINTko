@@ -10,6 +10,9 @@ on:
       - 'debos/**'
       - '.github/workflows/build-debos.yml'
   workflow_dispatch: {}
+  # Lets release.yml call this workflow on a version tag push, reusing the
+  # exact same build jobs instead of duplicating them.
+  workflow_call: {}
 
 jobs:
   build-amd64:
