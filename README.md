@@ -80,16 +80,16 @@ Default login: `osintko` / `osintko`.
 
 The built images are hosted on [my personal website](https://yordanova.info):
 
-- Intel/AMD64, UTM: [kali-linux-osintko-amd64.qcow2](https://yordanova.info/kali-linux-osintko-amd64.qcow2)
-- Apple Silicon/ARM64, UTM: [kali-linux-osintko-arm64.qcow2](https://yordanova.info/kali-linux-osintko-arm64.qcow2)
-- Intel/AMD64, VirtualBox: [kali-linux-osintko-amd64.vdi](https://yordanova.info/kali-linux-osintko-amd64.vdi)
+- Intel/AMD64, UTM: [osintko-amd64.qcow2](https://yordanova.info/osintko-amd64.qcow2)
+- Apple Silicon/ARM64, UTM: [osintko-arm64.qcow2](https://yordanova.info/osintko-arm64.qcow2)
+- Intel/AMD64, VirtualBox: [osintko-amd64.vdi](https://yordanova.info/osintko-amd64.vdi)
 
 If you'd rather build it yourself, every push to this repo triggers a GitHub Actions build for both architectures - check the [Actions tab](https://github.com/LinaYorda/OSINTko/actions) for the latest run and download the artifact directly.
 
 Each image has a matching `.sha256` file - verify your download against it before use:
 
 ```bash
-shasum -a 256 -c kali-linux-osintko-amd64.qcow2.sha256
+shasum -a 256 -c osintko-amd64.qcow2.sha256
 ```
 
 # Tools and Programs included

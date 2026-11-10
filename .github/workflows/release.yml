@@ -38,5 +38,5 @@ jobs:
             Built images for this release are hosted at https://yordanova.info - too large for GitHub's 2GB release asset limit, so only the SHA256 checksums are attached here. Verify your download:
 
             ```bash
-            shasum -a 256 -c kali-linux-osintko-amd64.qcow2.sha256
+            shasum -a 256 -c osintko-amd64.qcow2.sha256
             ```
