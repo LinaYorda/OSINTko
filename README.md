@@ -86,6 +86,12 @@ The built images are hosted on [my personal website](https://yordanova.info):
 
 If you'd rather build it yourself, every push to this repo triggers a GitHub Actions build for both architectures - check the [Actions tab](https://github.com/LinaYorda/OSINTko/actions) for the latest run and download the artifact directly.
 
+Each image has a matching `.sha256` file - verify your download against it before use:
+
+```bash
+shasum -a 256 -c kali-linux-osintko-amd64.qcow2.sha256
+```
+
 # Tools and Programs included
 
 ## Frameworks
@@ -165,10 +171,6 @@ If you'd rather build it yourself, every push to this repo triggers a GitHub Act
 # Known Issues
 
 A few of the vendored OSINT scripts write output (logs, downloaded files) relative to their own install directory rather than your home folder. This previously caused "permission denied" errors since that directory was root-owned; it's now fixed at build time for the affected tools. If you hit a similar permission error on a tool not listed here, let me know.
-
-# Feedback
-
-If you have any feedback, suggestions or comments please reach out to me at schefflina@gmail.com
 
 # Disclaimer
 

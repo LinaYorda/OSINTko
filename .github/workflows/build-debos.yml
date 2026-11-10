@@ -54,14 +54,18 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: osintko-amd64-qcow2
-          path: images/*.qcow2
+          path: |
+            images/*.qcow2
+            images/*.qcow2.sha256
           if-no-files-found: error
           retention-days: 3
 
       - uses: actions/upload-artifact@v4
         with:
           name: osintko-amd64-vdi
-          path: images/*.vdi
+          path: |
+            images/*.vdi
+            images/*.vdi.sha256
           if-no-files-found: error
           retention-days: 3
 
@@ -168,6 +172,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: osintko-arm64-qcow2
-          path: images/*.qcow2
+          path: |
+            images/*.qcow2
+            images/*.qcow2.sha256
           if-no-files-found: error
           retention-days: 3

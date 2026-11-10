@@ -26,9 +26,12 @@ if [ "$extra_format" = "vdi" ]; then
 	qemu-img convert -O vdi "$image".raw "$image".vdi
 	echo "INFO: Final vdi size:"
 	ls -lh "$image".vdi
+	sha256sum "$image".vdi >"$image".vdi.sha256
 fi
 
 rm -f "$image".raw
+
+sha256sum "$image".qcow2 >"$image".qcow2.sha256
 
 echo "INFO: Final qcow2 size:"
 ls -lh "$image".qcow2
