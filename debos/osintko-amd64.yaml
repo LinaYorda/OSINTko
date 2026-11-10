@@ -1,0 +1,169 @@
+# debos recipe for OSINTko - Kali-rolling amd64
+# Produces a qcow2 disk image for QEMU-based hypervisors (UTM, virt-manager).
+
+{{ $hostname := or .hostname "osintko" }}
+{{ $imagename := .imagename }}
+{{ $password := or .password "osintko" }}
+{{ $size := or .size "20GB" }}
+{{ $username := or .username "osintko" }}
+
+architecture: amd64
+
+actions:
+  - action: debootstrap
+    mirror: http://kali.download/kali
+    suite: kali-rolling
+    components: [ main, contrib, non-free, non-free-firmware ]
+    keyring-file: files/kali-archive-keyring.gpg
+
+  - description: "Trust the Kali archive signing key for subsequent apt actions"
+    action: run
+    chroot: false
+    command: rm -f $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg && cp $RECIPEDIR/files/kali-archive-keyring.gpg $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+
+  - description: "Retry apt fetches on transient mirror errors"
+    action: run
+    chroot: false
+    command: echo 'Acquire::Retries "3";' > $ROOTDIR/etc/apt/apt.conf.d/80-retries
+
+  - description: "Install usr-is-merged (cf. debos #361 and #362)"
+    action: apt
+    packages: [ usr-is-merged ]
+
+  - description: "Set hostname to {{ $hostname }}"
+    action: run
+    chroot: false
+    command: echo {{ $hostname }} > $ROOTDIR/etc/hostname
+
+  - description: "Add hostname to /etc/hosts (avoids DNS timeout on local hostname lookups)"
+    action: run
+    chroot: true
+    script: scripts/configure-etc-hosts.sh
+
+  - description: "Install OSINTko packages"
+    action: apt
+    recommends: true
+    packages:
+      - kali-linux-core
+      - kali-desktop-xfce
+      - kali-menu
+      - xserver-xorg-core
+      - xserver-xorg-input-all
+      - spice-vdagent
+      - qemu-guest-agent
+      - recon-ng
+      - spiderfoot
+      - sherlock
+      - maltego
+      - theharvester
+      - nmap
+      - wireshark
+      - cherrytree
+      - eyewitness
+      - tcpdump
+      - joplin
+      - amass
+      - finalrecon
+      - wpscan
+      - whatweb
+      - marble
+      - gnome-maps
+      - yt-dlp
+      - youtubedl-gui
+      - vim
+      - epiphany-browser
+      - tor
+      - torbrowser-launcher
+      - firefox-esr
+      - git
+      - curl
+      - python3
+      - python3-pip
+      - python3-dev
+      - build-essential
+      - pkg-config
+      - zlib1g-dev
+      - libjpeg-dev
+      - libfreetype-dev
+      - libsodium-dev
+      - libseccomp-dev
+      - libsqlite3-dev
+      - cargo
+      - golang-go
+
+  - description: "Remove bloat pulled in via Recommends"
+    action: run
+    chroot: true
+    script: scripts/remove-bloat.sh
+
+  - description: "Install vendored OSINT tools"
+    action: run
+    chroot: true
+    script: scripts/install-vendored-tools.sh
+
+  - description: "Install menu launchers and icons for vendored OSINT tools"
+    action: overlay
+    source: overlays/osint-menu
+
+  - description: "Hold kali-menu - apt upgrading it would silently overwrite our custom kali-applications.menu (not a tracked conffile)"
+    action: run
+    chroot: true
+    command: apt-mark hold kali-menu
+
+  - description: "Install OSINTko wallpaper and default desktop settings"
+    action: overlay
+    source: overlays/branding
+
+  - description: "Create user {{ $username }}"
+    action: run
+    chroot: true
+    script: scripts/create-user.sh {{ $username }} "{{ $password }}"
+
+  - description: "Setup the disk image (msdos + BIOS boot)"
+    action: image-partition
+    imagename: {{ $imagename }}.raw
+    imagesize: {{ $size }}
+    partitiontype: msdos
+    partitions:
+      - name: root
+        fs: ext4
+        start: 2048s
+        end: 100%
+        flags: [ boot ]
+    mountpoints:
+      - mountpoint: /
+        partition: root
+        options: [ errors=remount-ro ]
+
+  - action: filesystem-deploy
+    setup-kernel-cmdline: false
+
+  - description: "Install the kernel & bootloader"
+    action: apt
+    packages: [ grub-pc, linux-image-amd64 ]
+
+  - description: "Trim initramfs to VM-only storage drivers (shrinks initrd, speeds up GRUB's disk read)"
+    action: run
+    chroot: true
+    script: scripts/configure-initramfs.sh
+
+  - description: "Setup GRUB"
+    action: run
+    chroot: true
+    command: grub-install "$IMAGE" && update-grub
+
+  - description: "Final cleanup"
+    action: run
+    chroot: true
+    script: scripts/cleanup.sh
+
+  - description: "Zero free space so the qcow2 export can skip it"
+    action: run
+    chroot: true
+    script: scripts/zero-free-space.sh
+
+  - description: "Export to qcow2 image for UTM, plus vdi for VirtualBox"
+    label: "export-qcow2"
+    action: run
+    postprocess: true
+    script: scripts/export-qcow2.sh {{ $imagename }} vdi

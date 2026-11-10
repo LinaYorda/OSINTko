@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Near
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=/usr/share/near/near.png
+Exec=/usr/share/kali-menu/exec-in-shell "near -h"
+Path=
+StartupNotify=false

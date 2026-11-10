@@ -1,5 +1,0 @@
-# Cf. https://bugs.kali.org/view.php?id=7823
-# Cf. https://bugs.debian.org/1009290
-# Cf. https://jira.mariadb.org/browse/MDEV-28751
-[mysqld]
-innodb_flush_method = fsync

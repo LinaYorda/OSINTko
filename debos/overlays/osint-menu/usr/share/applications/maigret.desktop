@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Maigret
+Type=Application
+Categories=osint-username;
+Terminal=true
+Icon=/usr/share/maigret/maigret.png
+Exec=/usr/share/kali-menu/exec-in-shell "maigret -h"
+Path=
+StartupNotify=false

@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-set -e
-
-cd /usr/share/FacebookChecker
-exec ./FacebookChecker-linux-amd64  "$@"

@@ -1,0 +1,24 @@
+# Builder image used by .github/workflows/build-debos.yml to run debos for
+# arm64 on GitHub's ubuntu-24.04-arm runners, which have no /dev/kvm.
+FROM debian:trixie-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# ca-certificates first: Kali's mirror redirector sends debootstrap to
+# HTTPS mirrors, which fail cert verification without it.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       debos \
+       dosfstools \
+       e2fsprogs \
+       parted \
+       qemu-utils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /recipes

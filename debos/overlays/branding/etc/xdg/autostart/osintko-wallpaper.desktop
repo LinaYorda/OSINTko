@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=OSINTko Wallpaper
+Comment=Sets the OSINTko desktop wallpaper on every monitor/workspace
+Exec=/usr/local/bin/osintko-set-wallpaper.sh
+OnlyShowIn=XFCE;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

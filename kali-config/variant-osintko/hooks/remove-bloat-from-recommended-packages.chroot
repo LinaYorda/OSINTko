@@ -1,4 +1,0 @@
-#!/bin/sh
-
-apt -y remove desktop-base tango-icon-theme xorg
-apt -y autoremove

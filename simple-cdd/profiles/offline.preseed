@@ -1,3 +1,0 @@
-# Do not use a network mirror, full offline install
-d-i apt-setup/use_mirror boolean false
-d-i pkgsel/upgrade select none

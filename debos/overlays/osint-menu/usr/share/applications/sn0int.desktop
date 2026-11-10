@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=sn0int
+Type=Application
+Categories=frameworks;
+Terminal=true
+Icon=utilities-terminal
+Exec=/usr/share/kali-menu/exec-in-shell "sn0int -h"
+Path=
+StartupNotify=false

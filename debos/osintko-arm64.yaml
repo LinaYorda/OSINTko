@@ -1,0 +1,214 @@
+# debos recipe for OSINTko - Kali-rolling arm64
+# Produces a qcow2 disk image for QEMU-based hypervisors (UTM, virt-manager).
+
+{{ $hostname := or .hostname "osintko" }}
+{{ $imagename := .imagename }}
+{{ $password := or .password "osintko" }}
+{{ $size := or .size "20GB" }}
+{{ $username := or .username "osintko" }}
+
+architecture: arm64
+
+actions:
+  - action: debootstrap
+    mirror: http://kali.download/kali
+    suite: kali-rolling
+    components: [ main, contrib, non-free, non-free-firmware ]
+    keyring-file: files/kali-archive-keyring.gpg
+
+  - description: "Trust the Kali archive signing key for subsequent apt actions"
+    action: run
+    chroot: false
+    command: rm -f $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg && cp $RECIPEDIR/files/kali-archive-keyring.gpg $ROOTDIR/etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+
+  - description: "Retry apt fetches on transient mirror errors"
+    action: run
+    chroot: false
+    command: echo 'Acquire::Retries "3";' > $ROOTDIR/etc/apt/apt.conf.d/80-retries
+
+  - description: "Install usr-is-merged (cf. debos #361 and #362)"
+    action: apt
+    packages: [ usr-is-merged ]
+
+  - description: "Set hostname to {{ $hostname }}"
+    action: run
+    chroot: false
+    command: echo {{ $hostname }} > $ROOTDIR/etc/hostname
+
+  - description: "Add hostname to /etc/hosts (avoids DNS timeout on local hostname lookups)"
+    action: run
+    chroot: true
+    script: scripts/configure-etc-hosts.sh
+
+  - description: "Install OSINTko packages"
+    action: apt
+    recommends: true
+    packages:
+      - kali-linux-core
+      - kali-desktop-xfce
+      - kali-menu
+      - xserver-xorg-core
+      - xserver-xorg-input-all
+      - spice-vdagent
+      - qemu-guest-agent
+      - recon-ng
+      - spiderfoot
+      - sherlock
+      - maltego
+      - theharvester
+      - nmap
+      - wireshark
+      - cherrytree
+      - eyewitness
+      - tcpdump
+      - amass
+      - finalrecon
+      - wpscan
+      - whatweb
+      - marble
+      - gnome-maps
+      - yt-dlp
+      - youtubedl-gui
+      - vim
+      - epiphany-browser
+      - tor
+      - firefox-esr
+      - git
+      - curl
+      - python3
+      - python3-pip
+      - python3-dev
+      - build-essential
+      - pkg-config
+      - zlib1g-dev
+      - libjpeg-dev
+      - libfreetype-dev
+      - libsodium-dev
+      - libseccomp-dev
+      - libsqlite3-dev
+      - cargo
+      - golang-go
+
+  - description: "Remove bloat pulled in via Recommends"
+    action: run
+    chroot: true
+    script: scripts/remove-bloat.sh
+
+  - description: "Install vendored OSINT tools"
+    action: run
+    chroot: true
+    script: scripts/install-vendored-tools.sh
+
+  - description: "Install menu launchers and icons for vendored OSINT tools"
+    action: overlay
+    source: overlays/osint-menu
+
+  - description: "Hold kali-menu - apt upgrading it would silently overwrite our custom kali-applications.menu (not a tracked conffile)"
+    action: run
+    chroot: true
+    command: apt-mark hold kali-menu
+
+  - description: "Install OSINTko wallpaper and default desktop settings"
+    action: overlay
+    source: overlays/branding
+
+  - description: "Create user {{ $username }}"
+    action: run
+    chroot: true
+    script: scripts/create-user.sh {{ $username }} "{{ $password }}"
+
+  - description: "Setup the disk image (GPT + EFI for ARM64 UEFI)"
+    action: image-partition
+    imagename: {{ $imagename }}.raw
+    imagesize: {{ $size }}
+    partitiontype: gpt
+    partitions:
+      - name: efi
+        fs: vfat
+        start: 1MiB
+        end: 257MiB
+        flags: [ boot, esp ]
+      - name: root
+        fs: ext4
+        start: 257MiB
+        end: 100%
+    mountpoints:
+      - mountpoint: /
+        partition: root
+        options: [ errors=remount-ro ]
+      - mountpoint: /boot/efi
+        partition: efi
+
+  - action: filesystem-deploy
+    setup-kernel-cmdline: false
+
+  - description: "Install the kernel & EFI bootloader"
+    action: apt
+    packages: [ grub-efi-arm64, linux-image-arm64 ]
+
+  - description: "Trim initramfs to VM-only storage drivers (shrinks initrd, speeds up GRUB's disk read)"
+    action: run
+    chroot: true
+    script: scripts/configure-initramfs.sh
+
+  - description: "Setup GRUB for ARM64 UEFI (removable/fallback EFI path)"
+    action: run
+    chroot: true
+    command: grub-install --target=arm64-efi --efi-directory=/boot/efi --no-nvram --removable && update-grub
+
+  - description: "DEBUG: verify GRUB modules and EFI binary landed on disk"
+    action: run
+    chroot: true
+    command: |
+      echo "--- /boot/grub/arm64-efi ---"
+      ls -la /boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      echo "--- /boot/efi/EFI/BOOT ---"
+      ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+      echo "--- /boot/grub/grub.cfg ---"
+      cat /boot/grub/grub.cfg || echo "MISSING: /boot/grub/grub.cfg"
+
+  - description: "Final cleanup"
+    action: run
+    chroot: true
+    script: scripts/cleanup.sh
+
+  - description: "DEBUG: verify GRUB modules survived cleanup"
+    action: run
+    chroot: true
+    command: |
+      echo "--- /boot/grub/arm64-efi (post-cleanup) ---"
+      ls -la /boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      echo "--- /boot/efi/EFI/BOOT (post-cleanup) ---"
+      ls -la /boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+
+  - description: "Zero free space so the qcow2 export can skip it"
+    action: run
+    chroot: true
+    script: scripts/zero-free-space.sh
+
+  - description: "DEBUG: verify GRUB survived debos unmount/finalize, in the actual raw image bytes"
+    action: run
+    postprocess: true
+    command: |
+      set -x
+      cd "$ARTIFACTDIR"
+      loopdev=$(losetup --show -fP "{{ $imagename }}.raw")
+      partprobe "$loopdev" || true
+      sleep 1
+      mkdir -p /tmp/debug-raw
+      mount "${loopdev}p2" /tmp/debug-raw
+      echo "--- /boot/grub/arm64-efi (from final raw image, post-unmount) ---"
+      ls -la /tmp/debug-raw/boot/grub/arm64-efi/ || echo "MISSING: /boot/grub/arm64-efi"
+      mkdir -p /tmp/debug-raw/boot/efi
+      mount "${loopdev}p1" /tmp/debug-raw/boot/efi
+      echo "--- /boot/efi/EFI/BOOT (from final raw image, post-unmount) ---"
+      ls -la /tmp/debug-raw/boot/efi/EFI/BOOT/ || echo "MISSING: /boot/efi/EFI/BOOT"
+      umount /tmp/debug-raw/boot/efi
+      umount /tmp/debug-raw
+      losetup -d "$loopdev"
+
+  - description: "Export to qcow2 image for UTM"
+    label: "export-qcow2"
+    action: run
+    postprocess: true
+    script: scripts/export-qcow2.sh {{ $imagename }}

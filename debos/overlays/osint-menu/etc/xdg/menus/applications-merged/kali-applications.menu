@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Layout>
+    <Menuname>Usual Applications</Menuname>
+    <Menuname>Recon</Menuname>
+    <Menuname>Maps</Menuname>
+    <Menuname>OSINT</Menuname>
+    <Menuname>Video Downloaders</Menuname>
+    <Menuname>Frameworks</Menuname>
+    <Menuname>Reporting Tools</Menuname>
+    <Menuname>System Services</Menuname>
+    <Merge type="all"/>
+  </Layout>
+
+  <Menu>
+    <Name>Usual Applications</Name>
+    <Directory>usual-apps.directory</Directory>
+    <!-- This is the target of <Move> at the end ... -->
+  </Menu>
+
+  <Menu>
+    <Name>Recon</Name>
+    <Directory>recon.directory</Directory>
+    <Include>
+      <And>
+        <Category>recon</Category>
+      </And>
+      <And>
+        <Filename>kali-amass.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-finalrecon.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-sublist3r.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-wpscan.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-whatweb.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>Maps</Name>
+    <Directory>maps.directory</Directory>
+    <!-- Category=maps matches nothing on current Kali: gnome-maps' own
+         .desktop here only carries Categories=GNOME;GTK;Utility; (Debian
+         packaging strips non-standard categories), confirmed live on a
+         booted image. Filename match instead. -->
+    <Include>
+      <And>
+        <Filename>org.gnome.Maps.desktop</Filename>
+      </And>
+      <And>
+        <Filename>org.kde.marble.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>OSINT</Name>
+    <Directory>osint.directory</Directory>
+    <Include>
+      <Category>osint</Category>
+    </Include>
+    <Menu>
+      <Name>OSINT username</Name>
+      <Directory>osint-username.directory</Directory>
+      <Include>
+        <Category>osint-username</Category>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>OSINT phone-number</Name>
+      <Directory>osint-phone-number.directory</Directory>
+      <Include>
+        <Category>osint-phone-number</Category>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>OSINT social media</Name>
+      <Directory>osint-social-media.directory</Directory>
+      <Include>
+        <Category>osint-social-media</Category>
+      </Include>
+    </Menu>
+    <Menu>
+      <Name>OSINT email</Name>
+      <Directory>osint-email.directory</Directory>
+      <Include>
+        <Category>osint-email</Category>
+      </Include>
+    </Menu>
+  </Menu>
+
+  <Menu>
+    <Name>Video Downloaders</Name>
+    <Directory>video-downloaders.directory</Directory>
+    <Include>
+      <And>
+        <Category>video-downloaders</Category>
+      </And>
+      <And>
+        <Filename>page.codeberg.impromptux.ytdl-gui.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>Reporting Tools</Name>
+    <Directory>reporting-tools.directory</Directory>
+    <Include>
+      <And>
+        <Category>reporting-tools</Category>
+      </And>
+      <And>
+        <Filename>kali-eyewitness.desktop</Filename>
+      </And>
+      <And>
+        <Filename>cherrytree.desktop</Filename>
+      </And>
+      <And>
+        <Filename>joplin.desktop</Filename>
+      </And>
+    </Include>
+  </Menu>
+
+  <Menu>
+    <Name>Frameworks</Name>
+    <Directory>frameworks.directory</Directory>
+    <!-- Positioned last among the specific-category menus above: anything
+         not already claimed by OSINT/Recon/Maps/Video Downloaders/Reporting
+         Tools lands here via OnlyUnallocated, instead of silently dropping
+         out of the sidebar. Covers real Kali tools (maltego, nmap, wireshark,
+         recon-ng, spiderfoot, sherlock, ...) that this custom menu doesn't
+         otherwise name - their exact current category/filename in Kali's
+         own (now MITRE-based) menu isn't something we track here. -->
+    <Include>
+      <And>
+        <Category>frameworks</Category>
+      </And>
+      <And>
+        <Category>01-info-gathering</Category>
+      </And>
+      <And>
+        <Category>001-identify</Category>
+      </And>
+      <And>
+        <Category>004-respond</Category>
+      </And>
+      <And>
+        <Filename>kali-theHarvester.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-tcpdump.desktop</Filename>
+      </And>
+      <And>
+        <Filename>kali-netcat.desktop</Filename>
+      </And>
+      <OnlyUnallocated/>
+    </Include>
+  </Menu>
+
+  <!-- youtubedl-gui's own .desktop also carries a standard AudioVideo-style
+       category, which the base XFCE menu (not this file) matches into
+       Multimedia independently of our Video Downloaders Include above.
+       Reusing the existing "Multimedia" name here just adds this one
+       exclusion to it, without touching anything else in that menu. -->
+  <Menu>
+    <Name>Multimedia</Name>
+    <Exclude>
+      <Filename>page.codeberg.impromptux.ytdl-gui.desktop</Filename>
+    </Exclude>
+  </Menu>
+
+  <!-- Move default top-level menus one level deeper -->
+  <Move>
+    <Old>Accessories</Old>
+    <New>Usual Applications/Accessories</New>
+  </Move>
+  <Move>
+    <Old>Universal Access</Old>
+    <New>Usual Applications/Universal Access</New>
+  </Move>
+  <Move>
+    <Old>Electronics</Old>
+    <New>Usual Applications/Electronics</New>
+  </Move>
+  <Move>
+    <Old>Development</Old>
+    <New>Usual Applications/Development</New>
+  </Move>
+  <Move>
+    <Old>Education</Old>
+    <New>Usual Applications/Education</New>
+  </Move>
+  <Move>
+    <Old>Science</Old>
+    <New>Usual Applications/Science</New>
+  </Move>
+  <Move>
+    <Old>Games</Old>
+    <New>Usual Applications/Games</New>
+  </Move>
+  <Move>
+    <Old>Graphics</Old>
+    <New>Usual Applications/Graphics</New>
+  </Move>
+  <Move>
+    <Old>Internet</Old>
+    <New>Usual Applications/Internet</New>
+  </Move>
+  <Move>
+    <Old>Web Applications</Old>
+    <New>Usual Applications/Web Applications</New>
+  </Move>
+  <Move>
+    <Old>Multimedia</Old>
+    <New>Usual Applications/Multimedia</New>
+  </Move>
+  <Move>
+    <Old>Office</Old>
+    <New>Usual Applications/Office</New>
+  </Move>
+  <Move>
+    <Old>Sundry</Old>
+    <New>Usual Applications/Sundry</New>
+  </Move>
+  <Move>
+    <Old>System</Old>
+    <New>Usual Applications/System</New>
+  </Move>
+  <Move>
+    <Old>System Settings</Old>
+    <New>Usual Applications/System Settings</New>
+  </Move>
+  <Move>
+    <Old>Utilities</Old>
+    <New>Usual Applications/Utilities</New>
+  </Move>
+  <Move>
+    <Old>Other</Old>
+    <New>Usual Applications/Other</New>
+  </Move>
+  <Move>
+    <Old>Hamradio</Old>
+    <New>Usual Applications/Hamradio</New>
+  </Move>
+</Menu>

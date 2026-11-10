@@ -1,3 +1,0 @@
-httpx
-bs4
-argparse

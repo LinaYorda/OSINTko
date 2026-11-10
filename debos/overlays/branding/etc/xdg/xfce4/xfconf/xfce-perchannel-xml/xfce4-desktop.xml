@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="desktop-icons" type="empty">
+    <property name="style" type="int" value="2"/>
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="true"/>
+      <property name="show-filesystem" type="bool" value="true"/>
+      <property name="show-removable" type="bool" value="true"/>
+      <property name="show-trash" type="bool" value="true"/>
+    </property>
+    <property name="icon-size" type="uint" value="48"/>
+    <property name="tooltip-size" type="double" value="64.000000"/>
+  </property>
+  <!-- Backdrop/wallpaper is intentionally not set here: the real property
+       path is keyed by the actual monitor name, which xfconfd only knows
+       at runtime (varies per VM/host) - see
+       /etc/xdg/autostart/osintko-wallpaper.desktop, which sets it live
+       via xfconf-query after login instead. -->
+</channel>
