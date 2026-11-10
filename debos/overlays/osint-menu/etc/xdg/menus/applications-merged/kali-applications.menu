@@ -106,7 +106,7 @@
         <Category>video-downloaders</Category>
       </And>
       <And>
-        <Filename>youtubedl-gui.desktop</Filename>
+        <Filename>page.codeberg.impromptux.ytdl-gui.desktop</Filename>
       </And>
     </Include>
   </Menu>
@@ -164,6 +164,18 @@
       </And>
       <OnlyUnallocated/>
     </Include>
+  </Menu>
+
+  <!-- youtubedl-gui's own .desktop also carries a standard AudioVideo-style
+       category, which the base XFCE menu (not this file) matches into
+       Multimedia independently of our Video Downloaders Include above.
+       Reusing the existing "Multimedia" name here just adds this one
+       exclusion to it, without touching anything else in that menu. -->
+  <Menu>
+    <Name>Multimedia</Name>
+    <Exclude>
+      <Filename>page.codeberg.impromptux.ytdl-gui.desktop</Filename>
+    </Exclude>
   </Menu>
 
   <!-- Move default top-level menus one level deeper -->

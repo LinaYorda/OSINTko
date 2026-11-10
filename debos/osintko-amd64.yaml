@@ -162,8 +162,8 @@ actions:
     chroot: true
     script: scripts/zero-free-space.sh
 
-  - description: "Export to qcow2 image for UTM"
+  - description: "Export to qcow2 image for UTM, plus vdi for VirtualBox"
     label: "export-qcow2"
     action: run
     postprocess: true
-    script: scripts/export-qcow2.sh {{ $imagename }}
+    script: scripts/export-qcow2.sh {{ $imagename }} vdi

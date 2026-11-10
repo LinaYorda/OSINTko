@@ -1,8 +1,9 @@
 #!/bin/sh
-# Usage: export-qcow2.sh <imagename-without-extension>
+# Usage: export-qcow2.sh <imagename-without-extension> [vdi]
 set -eu
 
 image="$1"
+extra_format="${2:-}"
 
 # $ARTIFACTDIR is only auto-chdir'd into when fakemachine is active; on
 # hosts without KVM (e.g. GitHub's arm64 runners) debos falls back to
@@ -18,6 +19,13 @@ if qemu-img compare "$image".raw "$image".qcow2; then
 else
 	echo "ERROR: qcow2 content differs from raw image - compression is corrupting data"
 	exit 1
+fi
+
+if [ "$extra_format" = "vdi" ]; then
+	echo "INFO: Generate $image.vdi (VirtualBox, for Windows/Linux hosts - no qcow2-style compression, so expect a larger file)"
+	qemu-img convert -O vdi "$image".raw "$image".vdi
+	echo "INFO: Final vdi size:"
+	ls -lh "$image".vdi
 fi
 
 rm -f "$image".raw
